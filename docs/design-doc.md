@@ -447,11 +447,11 @@ Check each saw cut is square before facing: the wedge has 1 mm a side to face, a
 | 5 | 126.5 × 110 | Trim to 118 wide | Base plate blank 118 × 110 (finished 115 × 107) |
 | 6 | 126.5 × 136.5 | Cut at 103, then trim to 103 wide | Mount plate blank 103 × 103 (finished 100 × 100), plus a 126.5 × 30 offcut |
 
-| Stock | Part | Cuts | Spare |
-| --- | --- | --- | --- |
-| 20 × 65 × 50 | Roof block (19 × 60 × 42) | None: mill the 50 to 42, the 65 to 60, and skim to 19 | 2.5 a side on each dimension |
-| 10 × 30 × 100 | Thrust bar (10 × 30 × 42) and stop block (10 × 20 × 42) | Two blanks of 44 (44 + 3.5 + 44 = 91.5); mill the stop block down to 20 wide | About 8.5 |
-| 25 × 20 × 100 | Two lugs (40 × 24 × 20) | Two blanks of 42 (42 + 3.5 + 42 = 87.5) | About 12.5 (ordered 100 long rather than 90, which would have left only 2.5) |
+| Stock | Part | Cuts | Spare | Status |
+| --- | --- | --- | --- | --- |
+| 20 × 65 × 50 | Roof block (19 × 60 × 42) | None: mill the 50 to 42, the 65 to 60, and skim to 19 | 2.5 a side on each dimension | Ordered and received 6 Nov 2026 |
+| 10 × 30 × 100 | Thrust bar (10 × 30 × 42) and stop block (10 × 20 × 42) | Two blanks of 44 (44 + 3.5 + 44 = 91.5); mill the stop block down to 20 wide | About 8.5 | Ordered and received 6 Nov 2026 |
+| 25 × 20 × 100 | Two lugs (40 × 24 × 20) | Two blanks of 42 (42 + 3.5 + 42 = 87.5) | About 12.5 (ordered 100 long rather than 90, which would have left only 2.5) | Ordered and received 6 Nov 2026 |
 
 The plate layout uses 391.5 of the 400 width and 216.5 of the 250 height on the small-plate side. If the supplier's plate is undersize or has rough edges, order 410 × 260, or have the supplier saw the four plate blanks to the sizes above. The 270 × 54.5 offcut is the spare for remaking a small part.
 
@@ -795,7 +795,7 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | --- | --- | --- |
 | Tormach AU distributor | 3 | 2 sets of 31319 washers (16), quote pending |
 | Edcon Steel (ordered 29 Oct 2026) | 4, 5, 6, 9, 10, 12 | 4140/709M peeled round: Ø16 × 1 m, Ø50 × 150, Ø65 for the collar; O1 ground flat stock 40 × 5 × 500; Ø5 W1 silver steel 2 × 1 m |
-| Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | All 6061-T6. Plate 12 × 400 × 250: side plates 2 × 130 × 189 side by side, with the base plate (115 × 107) and mount plate (100 × 100) stacked beside them. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). |
+| Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | All 6061-T6. Plate 12 × 400 × 250: side plates 2 × 130 × 189 side by side, with the base plate (115 × 107) and mount plate (100 × 100) stacked beside them. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). Ordered and received 6 Nov 2026: the 20 × 65 × 50 roof block stock and both flats. Still to order: the 12 × 400 × 250 plate. |
 | Engineering supplier | 12, 17, 18, 20 | Mild steel 16 × 100 × 70 (fork plate); 2 mm brass sheet about 100 × 50 (cages); bronze strip 3 × 25 × 40; Ø12 h6 ground rod 2 × 140; 2 bronze bushes Ø12/Ø16 × 20; 4 × Ø12 shaft collars |
 | Gas spring supplier | 32 | Z-axis gas strut, once the head weight is measured (see Z-axis gas strut) |
 | Fasteners | 7, 8, and the hardware list | Everything in the hardware list below: screws, dowels, springs, e-clips and thread inserts |
