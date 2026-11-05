@@ -37,3 +37,6 @@ The design doc and measurement sheet are live Claude Docs; the markdown here is 
 
 ## Sources
 Sourced references (SIEG SX2.3 manual, SMC JA catalogue, Atlas 4140 data, Hoss / DJ Bird / Shane Wighton builds, Tormach TTS docs, DIN 2093) are listed in the References section of `docs/design-doc.md`.
+
+## Plate part drawings (5 Nov 2026)
+`drawings/plate-parts/` holds one dimensioned drawing per plate part (PNG and SVG), with every hole as x, y from 0,0 at the lower-left of its view: side plate, fork plate, base plate, mount plate, roof block, wear plate, thrust bar and bronze strip, stop block, float lug, roller cage. `generate_plate_drawings.py` regenerates them from the geometry; the same hole tables are in `docs/design-doc.md`.

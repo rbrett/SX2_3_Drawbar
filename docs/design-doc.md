@@ -423,6 +423,38 @@ If you'd rather not quench at home, a commercial heat-treater can do steps 3–6
 
 Check each saw cut is square before facing: the wedge has 1 mm a side to face, and the anvil about 0.7 mm a side before its sides are milled to 40.6 and ground. If a cut goes wrong, make the washers from the Ø65 offcut left after the collar instead (that bar needs to be at least 80 long), which frees the first 14 mm of the Ø50.
 
+**Cutting schedule for the aluminium (added 2 Nov 2026).** Saw blade 3.5 mm wide (kerf). Blanks are about 1.5 mm a side oversize for milling to the finished outline, and the plate parts come from one 12 × 400 × 250 plate, as in the Ready to order table. The blank sizes and cuts are my layout. The grade is 6061-T6 as drawn; 5083-H116/H321 or cast 5083 tooling plate uses the same blanks.
+
+```
+ ←──────────────────── 400 ─────────────────────→
+┌──────────────┬──────────────┬────────────┬────┐  ↑
+│ Side plate L │ Side plate R │ Base plate │    │  │
+│  133 × 192   │ 133.5 × 192  │ 118 × 110  │ 5  │  │
+│              │              ├────────────┤    │ 250
+│              │              │ Mount plate│ 20 │  │
+├──────────────┴──────────────┤ 103 × 103  │    │  │
+│ offcut 270 × 54.5           ├────────────┴────┤  │
+│                             │ offcut 126.5×30 │  ↓
+└─────────────────────────────┴─────────────────┘
+```
+
+| Cut | Piece | Operation | Result |
+| --- | --- | --- | --- |
+| 1 | Plate 400 × 250 | Cut across the 250 at 270 from the left edge | A: 270 × 250 (side plates); B: 126.5 × 250 (small plates) |
+| 2 | A | Cut at 192 along the 250 | 270 × 192, plus a 270 × 54.5 offcut (spare) |
+| 3 | 270 × 192 | Cut at 133 | Side plate blanks 133 × 192 and 133.5 × 192 (finished 130 × 189); keep them together, they are machined as a pair |
+| 4 | B | Cut at 110 along the 250 | 126.5 × 110 and 126.5 × 136.5 |
+| 5 | 126.5 × 110 | Trim to 118 wide | Base plate blank 118 × 110 (finished 115 × 107) |
+| 6 | 126.5 × 136.5 | Cut at 103, then trim to 103 wide | Mount plate blank 103 × 103 (finished 100 × 100), plus a 126.5 × 30 offcut |
+
+| Stock | Part | Cuts | Spare |
+| --- | --- | --- | --- |
+| 20 × 60 × 50 | Roof block (19 × 60 × 42) | None: face both ends to 42 and skim to 19 | — |
+| 10 × 30 × 100 | Thrust bar (10 × 30 × 42) and stop block (10 × 20 × 42) | Two blanks of 44 (44 + 3.5 + 44 = 91.5); mill the stop block down to 20 wide | About 8.5 |
+| 25 × 20 × 90 | Two lugs (40 × 24 × 20) | Two blanks of 42 (42 + 3.5 + 42 = 87.5) | About 2.5: too little if the bar end is out of square, so order 100 long or saw the blanks at 41.5 |
+
+The plate layout uses 391.5 of the 400 width and 216.5 of the 250 height on the small-plate side. If the supplier's plate is undersize or has rough edges, order 410 × 260, or have the supplier saw the four plate blanks to the sizes above. The 270 × 54.5 offcut is the spare for remaking a small part.
+
 **Machining sequence: wedge and anvil.** Both come out of the Ø50 bar with every face cleaning up (wedge section diagonal 47.2 mm and anvil 46.8 mm, including grinding allowance).
 
 1. Turn the two thrust washers off the end of the Ø50 bar first (see the guidance table), then saw an 82 mm wedge blank and a 42 mm anvil blank. With only 1 mm a side to face, check the saw cuts are square before facing.
@@ -450,6 +482,159 @@ Check each saw cut is square before facing: the wedge has 1 mm a side to face, a
 | Mount plate | 12 mm 6061-T6 | Profile 100 × 100; bore Ø40; spot the 4 × Ø13 from the cylinder's own front threads; drill 4 × Ø6.6 | Spot the 74.07 pattern from the cylinder rather than marking it out; fit steel thread inserts in the side plates' front-edge M6 holes, since this plate comes off whenever the cylinder does |
 | Thrust bar, stop block | 10 × 30 6061-T6 flat | Mill to 42 −0/−0.1 with square ends; tap 2 × M5 12 deep in each end; bar: 2 × M3 for the bronze strip; block: M8 through | Same 42 as the roof block; stop block's M8 square to the face within 0.05 |
 | Cage cross pins (4) | Ø5 W1 | Cut about 75; groove for e-clips just outside each plate | Check the length on the assembled plates; no hardening needed |
+
+### Plate parts: hole positions from 0,0 (added 5 Nov 2026)
+
+Every plate part is drawn on its own below, with each hole's centre as x, y in mm from 0,0 at the lower-left corner of the view named (zero your DRO or CNC work offset on that corner). This supersedes reading positions off the assembly drawings above, which use X/Z from the spindle axis; the positions are the same, converted. Tapped holes give the tap size and its drill; Ø6 H7 holes are drilled Ø5.8 and reamed. The coordinate conversion is my arithmetic from the existing drawings.
+
+**Side plate (2 off, mirrored pair).** 12 mm 6061-T6 (or 5083-H116). View from the machine's left, front to the right; 0,0 = rear bottom corner (X −65, Z −37).
+
+![Side plate (2 off, mirrored pair) – dimensioned drawing](../drawings/plate-parts/side-plate.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| A1 | Face | 50 | 179.9 | Ø8.5 | thru |
+| A2 | Face | 80 | 179.9 | Ø8.5 | thru |
+| B1 | Face | 65 | 179.9 | Ø6 H7 | thru, ream with roof block |
+| C1 | Face | 25 | 158 | Ø5.1 | thru |
+| C2 | Face | 105 | 158 | Ø5.1 | thru |
+| C3 | Face | 25 | 135 | Ø5.1 | thru |
+| C4 | Face | 105 | 121 | Ø5.1 | thru |
+| D1 | Face | 37 | 103 | Ø5.5 | thru |
+| D2 | Face | 37 | 121 | Ø5.5 | thru |
+| E1 | Face | 8 | 140.8 | Ø5.5 | thru |
+| E2 | Face | 8 | 150.8 | Ø5.5 | thru |
+| F1 | Face | 89 | 51 | M6 (drill Ø5.0) | thru |
+| F2 | Face | 117 | 51 | M6 (drill Ø5.0) | thru |
+| G2 | Face | 65 | 97.9 | Ø6 spring pocket | Z 92.9–102.9 |
+| H1 | Front edge | 6 | 124 | M6 Helicoil | 15 deep |
+| H2 | Front edge | 6 | 154 | M6 Helicoil | 15 deep |
+| J1 | Bottom edge | 29 | 6 | Ø6.6 | thru the 20 foot |
+| J2 | Bottom edge | 101 | 6 | Ø6.6 | thru the 20 foot |
+
+Window 92 × 16.2 (x 19–111, y 20–36.2) takes the fork; slot 52 wide (x 39–91) open to y 45. Inside corners R2. G1: anvil lift pocket 7 × 9 × 3.5 deep, inner face only. G2: Ø6 × 10 spring pocket below it, on the pocket centre line. Machine both plates stacked; coordinates are the same for both in this view. Pockets go on the two inner faces. Edge views: x across the 12 thickness (H, J at mid-thickness 6). H in the front edge (x 130 on the face view), J up through each foot.
+
+**Fork plate (1 off).** 16 mm mild steel. Plan from above, open end of the slot at the bottom; 0,0 = lower-left corner.
+
+![Fork plate (1 off) – dimensioned drawing](../drawings/plate-parts/fork-plate.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| K1 | Plan | 10 | 6 | M6 (drill Ø5.0) | 12 deep from below |
+| K2 | Plan | 82 | 6 | M6 (drill Ø5.0) | 12 deep from below |
+| K3 | Plan | 10 | 60 | M6 (drill Ø5.0) | 12 deep from below |
+| K4 | Plan | 82 | 60 | M6 (drill Ø5.0) | 12 deep from below |
+
+Slot 54 +0.2/0 wide (x 19–73), open at y 0, closed end R27 centred at (46, 33). Top face flat (fly-cut): it bears on the collar flange. Break the slot edges 0.5.
+
+**Head-top base plate (1 off).** 12 mm 6061-T6. Plan from above, front at the bottom; 0,0 = front-left corner. Spindle axis at (57.5, 60).
+
+![Head-top base plate (1 off) – dimensioned drawing](../drawings/plate-parts/base-plate.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| A1 | Plan | 27.5 | 7.5 | Ø6.6 | thru |
+| A2 | Plan | 87.5 | 7.5 | Ø6.6 | thru |
+| B1 | Plan | 8.5 | 100 | Ø6.6 | thru |
+| B2 | Plan | 106.5 | 100 | Ø6.6 | thru |
+| C1 | Plan | 10.5 | 22 | M8 (drill Ø6.8) | thru, square within 0.05 |
+| C2 | Plan | 104.5 | 22 | M8 (drill Ø6.8) | thru, square within 0.05 |
+| D1 | Plan | 57.5 | 7.5 | Ø6 H7 | thru; drill Ø5.8, ream on the head |
+| D2 | Plan | 8.5 | 90 | Ø6 H7 | thru; drill Ø5.8, ream on the head |
+
+Front corners chamfered 7 × 7. Cut-out R47 on the spindle axis, opening into a slot 80 wide (x 17.5–97.5) to the rear edge. D1 leaves a 2.5 web to the R47 cut-out: drill it after profiling and deburr gently. A and B: spot through onto the head, drill Ø5.0 through the 9 mm casting and tap M6.
+
+**Cylinder mount plate (1 off).** 12 mm 6061-T6. Either face (symmetric); 0,0 = lower-left corner. Centre (50, 50) on the cylinder axis, Z 102.
+
+![Cylinder mount plate (1 off) – dimensioned drawing](../drawings/plate-parts/mount-plate.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| L1 | Face | 12.97 | 12.97 | Ø13 | thru |
+| L2 | Face | 87.03 | 12.97 | Ø13 | thru |
+| L3 | Face | 12.97 | 87.03 | Ø13 | thru |
+| L4 | Face | 87.03 | 87.03 | Ø13 | thru |
+| M1 | Face | 50 | 50 | Ø40 bore | thru |
+| N1 | Face | 23 | 35 | Ø6.6 | thru |
+| N2 | Face | 77 | 35 | Ø6.6 | thru |
+| N3 | Face | 23 | 65 | Ø6.6 | thru |
+| N4 | Face | 77 | 65 | Ø6.6 | thru |
+
+L: 74.07 square for the M12 cylinder screws; spot them from the cylinder itself rather than marking out. N: M6 × 25 into the side plates' front edges (Z 87 and 117).
+
+**Roof block (1 off).** 6061-T6, 60 × 42 × 19 from 20 mm plate. 0,0 = lower-left of each view; x along the wedge travel.
+
+![Roof block (1 off) – dimensioned drawing](../drawings/plate-parts/roof-block.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| P1 | Top face | 5 | 7 | Ø3.4, c'bore Ø6.5 × 3.5 | thru |
+| P2 | Top face | 55 | 7 | Ø3.4, c'bore Ø6.5 × 3.5 | thru |
+| P3 | Top face | 5 | 35 | Ø3.4, c'bore Ø6.5 × 3.5 | thru |
+| P4 | Top face | 55 | 35 | Ø3.4, c'bore Ø6.5 × 3.5 | thru |
+| Q1 | Side face (both) | 15 | 10 | M8 (drill Ø6.8 × 17) | 14 deep |
+| Q2 | Side face (both) | 45 | 10 | M8 (drill Ø6.8 × 17) | 14 deep |
+| R1 | Side face (both) | 30 | 10 | Ø6 H7 | 10 deep |
+
+42 −0/−0.05 wide: it sets the side-plate spacing. Side faces square to the base within 0.02. Q and R on both 60 × 19 side faces (the faces against the side plates).
+
+**Roof wear plate (1 off).** O1 ground flat stock 40 × 5, 60 long. Top (non-rolling) face; 0,0 = lower-left corner.
+
+![Roof wear plate (1 off) – dimensioned drawing](../drawings/plate-parts/wear-plate.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| S1 | Top face | 5 | 6 | M3 (drill Ø2.5 × 3.2 flat) | 3 deep |
+| S2 | Top face | 55 | 6 | M3 (drill Ø2.5 × 3.2 flat) | 3 deep |
+| S3 | Top face | 5 | 34 | M3 (drill Ø2.5 × 3.2 flat) | 3 deep |
+| S4 | Top face | 55 | 34 | M3 (drill Ø2.5 × 3.2 flat) | 3 deep |
+
+Drill and tap before hardening; 1.8 of skin is left, so the rolling face stays unbroken. Harden 58–62 HRC, grind both faces parallel within 0.005.
+
+**Rear thrust bar and bronze strip (1 off each).** Bar 6061-T6 42 × 30 × 10; strip bronze 40 × 25 × 3. 0,0 = lower-left of each view.
+
+![Rear thrust bar and bronze strip (1 off each) – dimensioned drawing](../drawings/plate-parts/thrust-bar.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| T1 | Anvil face | 6 | 15 | M3 (drill Ø2.5) | 8 deep |
+| T2 | Anvil face | 36 | 15 | M3 (drill Ø2.5) | 8 deep |
+| U1 | End (both) | 5 | 6 | M5 (drill Ø4.2 × 15) | 12 deep |
+| U2 | End (both) | 5 | 24 | M5 (drill Ø4.2 × 15) | 12 deep |
+| V1 | Bronze strip | 5 | 12.5 | Ø3.4, 90° csk | thru |
+| V2 | Bronze strip | 35 | 12.5 | Ø3.4, 90° csk | thru |
+
+42 −0/−0.1 long with square ends. Strip sits 1 in from each end and 2.5 from each long edge; heads 0.3 below the bronze face.
+
+**Rear stop block (1 off).** 6061-T6 42 × 20 × 10. 0,0 = lower-left of each view.
+
+![Rear stop block (1 off) – dimensioned drawing](../drawings/plate-parts/stop-block.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| W1 | Wedge face | 21 | 10 | M8 (drill Ø6.8) | thru, square within 0.05 |
+| X1 | End (both) | 5 | 5 | M5 (drill Ø4.2 × 15) | 12 deep |
+| X2 | End (both) | 5 | 15 | M5 (drill Ø4.2 × 15) | 12 deep |
+
+42 −0/−0.1 long with square ends. M8 × 30 set screw and lock nut in W1 sets the wedge stop.
+
+**Float lug (2 off).** 6061-T6 40 × 24 × 20 from 25 × 20 flat. 0,0 = lower-left; mounting face at y 0 in the plan.
+
+![Float lug (2 off) – dimensioned drawing](../drawings/plate-parts/lug.png)
+
+| ID | View | x | y | Size | Depth / note |
+| --- | --- | --- | --- | --- | --- |
+| Y1 | Plan (top) | 20 | 14 | Ø16 H7 (bush, then ream Ø12 H8) | thru the 20 |
+| Z1 | Mounting face | 6 | 10 | Ø7 | thru the 24 |
+| Z2 | Mounting face | 34 | 10 | Ø7 | thru the 24 |
+
+Bush bore leaves a 2 wall on the outer face (24 − 14 − 8): light duty only, but take care when reaming. Z1, Z2 at 28 centres match the side plate F1, F2; Ø7 gives a little float for fitting on the pins.
+
+**Roller cage (2 off).** 2 mm brass sheet. 0,0 = lower-left corner of the overall 52 × 41 blank.
+
+![Roller cage (2 off) – dimensioned drawing](../drawings/plate-parts/roller-cage.png)
+
+Windows 14.3 × 36.6, centres (17, 20.5) and (35, 20.5), 18 pitch; rollers Ø14 × 36 with 0.3 / 0.6 play. Tongues 6 × 3 each side carry the centring springs. Break all window edges.
 
 **Fitting the housing to the head.**
 
@@ -591,7 +776,7 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | 18 | Anvil parts | 1 set | Rear thrust bar, 6061-T6 10 × 30 × 42, faced with a 3 × 25 × 40 bronze strip; 2 × Ø5 m6 × 10 dowel pins (ISO 8734) as lift pins, pressed into the reamed H7 holes; 2 light springs under them | Engineering supplier | — | Proposed |
 | 19 | Hard stop | 1 | M8 set screw and lock nut in a rear stop block (6061-T6 10 × 20 × 42) between the side plates | Fastener supplier | — | Proposed |
 | 20 | Float guides | 2 sets | 2 × Ø12 h6 ground rod 140 long (M8 × 11 spigot turned on one end); 2 lugs (6061-T6 40 × 24 × 20) with Ø12/Ø16 × 20 bronze bushes; 4 × Ø22 × 10 set-screw collars; 2 compression springs, about 13 ID × 20 free, about 3 N/mm, fitted at 12 long (about 24 N each) | Bearing or engineering supplier | — | Proposed |
-| 21 | Head-top base plate | 2 | 12 mm 6061-T6 replacing the belt cover: outline flush with the head top, R47 cut-out round the spindle opening into an 80 wide slot to the rear for the belt; 4 × M6 × 20 (8.8) into new holes tapped through the 9 mm casting top; 2 × Ø6 dowels; carries the two float guide pins (see the base plate drawing) | Steel supplier | Corner-hole positions and depth (sheet 9.9), 9.8, 9.10 | Proposed |
+| 21 | Head-top base plate | 1 | 12 mm 6061-T6 replacing the belt cover: outline flush with the head top, R47 cut-out round the spindle opening into an 80 wide slot to the rear for the belt; 4 × M6 × 20 (8.8) into new holes tapped through the 9 mm casting top; 2 × Ø6 dowels; carries the two float guide pins (see the base plate drawing) | Steel supplier | Corner-hole positions and depth (sheet 9.9), 9.8, 9.10 | Proposed |
 | 22 | Filter-regulator | 1 | With gauge, 1/4" ports, set to 5.0 bar | Pneumatics supplier | — | Committed |
 | 23 | Solenoid valve | 1 | 5/2 single solenoid, spring return, 24 VDC | Pneumatics supplier | — | Committed |
 | 24 | Flow controls | 2 | Meter-out, push-in, 10 mm tube × R3/8, in place of the PC10-03 fittings | Pneumatics supplier | Port thread | Purchased |
