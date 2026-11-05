@@ -813,34 +813,34 @@ The floating joint (row 13) can be ordered as the SMC JA40-14-150, whose 4,400 N
 
 **Hardware list (wedge design).** Every screw, pin and small bought part in one place. Lengths are checked against the parts they pass through; grade 8.8 unless stated.
 
-| Item | Qty | Size and spec | Where |
-| --- | --- | --- | --- |
-| Socket head cap screw | 6 + 2 spare | M8 × 25, grade 12.9 | Collar clamp |
-| Heavy hex nut and jam nut | 1 + 1, plus spares | 7/16-20 UNF, grade 8 | Drawbar preload |
-| Stud | 1 | M14 × 1.5 × 40, grade 10.9 or 12.9 (or a fine-thread bolt with the head cut off) | Cylinder rod to JA joint |
-| Thin nut | 1 | M14 × 1.5 (if not supplied with the JA) | JA stud, locked against the wedge end |
-| Socket head cap screw | 4 | M12 × (35 + spacer length); through the 12 mm plate this engages 9 mm of the cylinder's 14 mm thread | Cylinder to mount plate |
-| Spacer tube | 4 | ×13 ID, length set from the JA measurement (may be none) | Behind the cylinder |
-| Socket head cap screw | 4 | M6 × 25 | Mount plate to side-plate front edges |
-| Socket head cap screw | 4 | M8 × 25 | Roof block to side plates |
-| Dowel pin, ISO 8734 | 2 | ×6 m6 × 20 | Roof block to side plates |
-| Socket head cap screw | 4 | M3 × 18 | Wear plate up into roof block |
-| Socket head cap screw | 8 | M5 × 20 | Thrust bar and stop block ends |
-| Countersunk screw | 2 | M3 × 8 | Bronze strip to thrust bar |
-| Hex set screw and nut | 1 + 1 | M8 × 30, full thread | Hard stop |
-| Socket head cap screw | 4 | M6 × 30 | Fork plate, up through the feet |
-| Socket head cap screw | 4 | M6 × 35 | Float lugs to side plates |
-| Socket head cap screw | 4 | M6 × 20: through the 12 mm plate, 8 mm into the 9 mm casting top, so nothing pokes through | Base plate to head |
-| Dowel pin, ISO 8734 | 2 | ×6 m6 × 16 | Base plate to head |
-| Dowel pin, ISO 8734 | 2 | ×5 m6 × 10 | Anvil lift pins |
-| Shaft collar, set-screw type | 4 | ×12 bore | Float guide rest and top collars |
-| Sintered bronze bush | 2 | ×12 × ×16 × 20 | Float lugs |
-| Compression spring | 2 | to suit ×12 pin, about 20 free, about 3 N/mm | Float hold-down, about 24 N fitted |
-| Compression spring | 4 | ×5 × 16 free, about 0.1 N/mm | Roller cages |
-| Compression spring | 2 | to fit a ×6 pocket, about 10 free, 1–2 N fitted | Anvil lift |
-| E-clip, DIN 6799 | 8 | for ×5 shaft | Cage cross pins |
-| Thread insert, Helicoil type | 4 | M6, 1.5 × d long | Side plates' front edges, for the mount-plate screws (removed with the cylinder) |
-| Thread insert, Helicoil type (optional) | 4 | M8, 1.5 × d long | Roof block ends, if the box will be taken apart often |
+| Item | Qty | Size and spec | Where | Status |
+| --- | --- | --- | --- | --- |
+| Socket head cap screw | 6 + 2 spare | M8 × 25, grade 12.9 | Collar clamp | Ordered 6 Nov 2026 |
+| Heavy hex nut and jam nut | 1 + 1, plus spares | 7/16-20 UNF, grade 8 | Drawbar preload | Ordered 6 Nov 2026 |
+| Stud | 1 | M14 × 1.5 × 40, grade 10.9 or 12.9 (or a fine-thread bolt with the head cut off) | Cylinder rod to JA joint | Ordered 6 Nov 2026 |
+| Thin nut | 1 | M14 × 1.5 (if not supplied with the JA) | JA stud, locked against the wedge end | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M12 × (35 + spacer length); through the 12 mm plate this engages 9 mm of the cylinder's 14 mm thread | Cylinder to mount plate | Ordered 6 Nov 2026 |
+| Spacer tube | 4 | Ø13 ID, length set from the JA measurement (may be none) | Behind the cylinder | Not ordered: length set after the JA measurement |
+| Socket head cap screw | 4 | M6 × 25 | Mount plate to side-plate front edges | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M8 × 25 | Roof block to side plates | Ordered 6 Nov 2026 |
+| Dowel pin, ISO 8734 | 2 | Ø6 m6 × 20 | Roof block to side plates | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M3 × 18 | Wear plate up into roof block | Ordered 6 Nov 2026 |
+| Socket head cap screw | 8 | M5 × 20 | Thrust bar and stop block ends | Ordered 6 Nov 2026 |
+| Countersunk screw | 2 | M3 × 8 | Bronze strip to thrust bar | Ordered 6 Nov 2026 |
+| Hex set screw and nut | 1 + 1 | M8 × 30, full thread | Hard stop | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M6 × 30 | Fork plate, up through the feet | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M6 × 35 | Float lugs to side plates | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M6 × 20: through the 12 mm plate, 8 mm into the 9 mm casting top, so nothing pokes through | Base plate to head | Ordered 6 Nov 2026 |
+| Dowel pin, ISO 8734 | 2 | Ø6 m6 × 16 | Base plate to head | Ordered 6 Nov 2026 |
+| Dowel pin, ISO 8734 | 2 | Ø5 m6 × 10 | Anvil lift pins | Ordered 6 Nov 2026 |
+| Shaft collar, set-screw type | 4 | Ø12 bore | Float guide rest and top collars | Ordered 6 Nov 2026 |
+| Sintered bronze bush | 2 | Ø12 × Ø16 × 20 | Float lugs | Ordered 6 Nov 2026 |
+| Compression spring | 2 | to suit Ø12 pin, about 20 free, about 3 N/mm | Float hold-down, about 24 N fitted | Ordered 6 Nov 2026 |
+| Compression spring | 4 | Ø5 × 16 free, about 0.1 N/mm | Roller cages | Ordered 6 Nov 2026 |
+| Compression spring | 2 | to fit a Ø6 pocket, about 10 free, 1–2 N fitted | Anvil lift | Ordered 6 Nov 2026 |
+| E-clip, DIN 6799 | 8 | for Ø5 shaft | Cage cross pins | Ordered 6 Nov 2026 |
+| Thread insert, Helicoil type | 4 | M6, 1.5 × d long | Side plates' front edges, for the mount-plate screws (removed with the cylinder) | Ordered 6 Nov 2026 |
+| Thread insert, Helicoil type (optional) | 4 | M8, 1.5 × d long | Roof block ends, if the box will be taken apart often | Ordered 6 Nov 2026 |
 
 ## Open items
 
