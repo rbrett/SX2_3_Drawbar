@@ -423,29 +423,16 @@ If you'd rather not quench at home, a commercial heat-treater can do steps 3–6
 
 Check each saw cut is square before facing: the wedge has 1 mm a side to face, and the anvil about 0.7 mm a side before its sides are milled to 40.6 and ground. If a cut goes wrong, make the washers from the Ø65 offcut left after the collar instead (that bar needs to be at least 80 long), which frees the first 14 mm of the Ø50.
 
-**Cutting schedule for the aluminium (added 2 Nov 2026).** Saw blade 3.5 mm wide (kerf). Blanks are about 1.5 mm a side oversize for milling to the finished outline, and the plate parts come from one 12 × 400 × 250 plate, as in the Ready to order table. The blank sizes and cuts are my layout. The grade is 6061-T6 as drawn; 5083-H116/H321 or cast 5083 tooling plate uses the same blanks.
+**Cutting schedule for the aluminium (added 2 Nov 2026; plate parts changed to 12 × 160 flat bar 6 Nov 2026).** Saw blade 3.5 mm wide (kerf). Blanks are about 1.5 mm a side oversize for milling to the finished outline. The 12 mm parts now come from 12 × 160 flat bar (purchased 6 Nov 2026) instead of a 400 × 250 plate, which couldn't be sourced. The blank sizes and cuts are my layout. Wide flat bar is often extruded 6060-T5 rather than 6061-T6: record the alloy as supplied. If it is 6060-T5 (minimum yield about 110 MPa, from memory), the highest plate stress (about 53 MPa in the side-plate feet) still has a safety factor of about 2, but fit Helicoils or use 2 × d engagement in the tapped holes.
 
-```
- ←──────────────────── 400 ─────────────────────→
-┌──────────────┬──────────────┬────────────┬────┐  ↑
-│ Side plate L │ Side plate R │ Base plate │    │  │
-│  133 × 192   │ 133.5 × 192  │ 118 × 110  │ 5  │  │
-│              │              ├────────────┤    │ 250
-│              │              │ Mount plate│ 20 │  │
-├──────────────┴──────────────┤ 103 × 103  │    │  │
-│ offcut 270 × 54.5           ├────────────┴────┤  │
-│                             │ offcut 126.5×30 │  ↓
-└─────────────────────────────┴─────────────────┘
-```
+| Order along the bar | Part | Blank, across × along (mm) | Saw cut | Running length (mm) |
+| --- | --- | --- | --- | --- |
+| 1 | Side plate | 133 × 192 (finished 130 × 189) | 3.5 | 195.5 |
+| 2 | Side plate | 133 × 192 (finished 130 × 189) | 3.5 | 391 |
+| 3 | Base plate | 118 × 110 (finished 115 × 107) | 3.5 | 504.5 |
+| 4 | Mount plate | 103 × 103 (finished 100 × 100) | — | 607.5 |
 
-| Cut | Piece | Operation | Result |
-| --- | --- | --- | --- |
-| 1 | Plate 400 × 250 | Cut across the 250 at 270 from the left edge | A: 270 × 250 (side plates); B: 126.5 × 250 (small plates) |
-| 2 | A | Cut at 192 along the 250 | 270 × 192, plus a 270 × 54.5 offcut (spare) |
-| 3 | 270 × 192 | Cut at 133 | Side plate blanks 133 × 192 and 133.5 × 192 (finished 130 × 189); keep them together, they are machined as a pair |
-| 4 | B | Cut at 110 along the 250 | 126.5 × 110 and 126.5 × 136.5 |
-| 5 | 126.5 × 110 | Trim to 118 wide | Base plate blank 118 × 110 (finished 115 × 107) |
-| 6 | 126.5 × 136.5 | Cut at 103, then trim to 103 wide | Mount plate blank 103 × 103 (finished 100 × 100), plus a 126.5 × 30 offcut |
+Square the bar end first. Mill each blank's width down from the 160: side plates 27 off, base plate 42 off, mount plate 57 off (or saw the strip off first). Keep the two side-plate blanks together; they are machined as a pair.
 
 | Stock | Part | Cuts | Spare | Status |
 | --- | --- | --- | --- | --- |
@@ -453,7 +440,7 @@ Check each saw cut is square before facing: the wedge has 1 mm a side to face, a
 | 10 × 30 × 100 | Thrust bar (10 × 30 × 42) and stop block (10 × 20 × 42) | Two blanks of 44 (44 + 3.5 + 44 = 91.5); mill the stop block down to 20 wide | About 8.5 | Ordered and received 6 Nov 2026 |
 | 25 × 20 × 100 | Two lugs (40 × 24 × 20) | Two blanks of 42 (42 + 3.5 + 42 = 87.5) | About 12.5 (ordered 100 long rather than 90, which would have left only 2.5) | Ordered and received 6 Nov 2026 |
 
-The plate layout uses 391.5 of the 400 width and 216.5 of the 250 height on the small-plate side. If the supplier's plate is undersize or has rough edges, order 410 × 260, or have the supplier saw the four plate blanks to the sizes above. The 270 × 54.5 offcut is the spare for remaking a small part.
+The bar needs to be at least 608 long (650 recommended, to allow for squaring the end and a wandering cut). The strips beside each blank (27, 42 and 57 wide) are the spare; nothing else in the design needs 12 mm.
 
 **Machining sequence: wedge and anvil.** Both come out of the Ø50 bar with every face cleaning up (wedge section diagonal 47.2 mm and anvil 46.8 mm, including grinding allowance).
 
@@ -795,7 +782,7 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | --- | --- | --- |
 | Tormach AU distributor | 3 | 2 sets of 31319 washers (16), quote pending |
 | Edcon Steel (ordered 29 Oct 2026) | 4, 5, 6, 9, 10, 12 | 4140/709M peeled round: Ø16 × 1 m, Ø50 × 150, Ø65 for the collar; O1 ground flat stock 40 × 5 × 500; Ø5 W1 silver steel 2 × 1 m |
-| Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | All 6061-T6. Plate 12 × 400 × 250: side plates 2 × 130 × 189 side by side, with the base plate (115 × 107) and mount plate (100 × 100) stacked beside them. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). Ordered and received 6 Nov 2026: the 20 × 65 × 50 roof block stock and both flats. Still to order: the 12 × 400 × 250 plate. |
+| Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | All 6061-T6 (the 12 × 160 flat bar may be 6060-T5: record what was supplied). Flat bar 12 × 160, at least 608 long (650 recommended): side plates 2 × 130 × 189, base plate (115 × 107) and mount plate (100 × 100) cut one after another along the bar. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). Ordered and received 6 Nov 2026: the 20 × 65 × 50 roof block stock and both flats. 12 × 160 flat bar purchased 6 Nov 2026 (the 400 × 250 plate couldn't be sourced). |
 | Engineering supplier | 12, 17, 18, 20 | Mild steel 16 × 100 × 70 (fork plate); 2 mm brass sheet about 100 × 50 (cages); bronze strip 3 × 25 × 40; Ø12 h6 ground rod 2 × 140; 2 bronze bushes Ø12/Ø16 × 20; 4 × Ø12 shaft collars |
 | Gas spring supplier | 32 | Z-axis gas strut, once the head weight is measured (see Z-axis gas strut) |
 | Fasteners | 7, 8, and the hardware list | Everything in the hardware list below: screws, dowels, springs, e-clips and thread inserts |
