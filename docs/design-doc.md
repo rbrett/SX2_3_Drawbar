@@ -765,10 +765,10 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | 20 | Float guides | 2 sets | 2 × Ø12 h6 ground rod 140 long (M8 × 11 spigot turned on one end); 2 lugs (6061-T6 40 × 24 × 20) with Ø12/Ø16 × 20 bronze bushes; 4 × Ø22 × 10 set-screw collars; 2 compression springs, about 13 ID × 20 free, about 3 N/mm, fitted at 12 long (about 24 N each) | Bearing or engineering supplier | — | Proposed |
 | 21 | Head-top base plate | 1 | 12 mm 6061-T6 replacing the belt cover: outline flush with the head top, R47 cut-out round the spindle opening into an 80 wide slot to the rear for the belt; 4 × M6 × 20 (8.8) into new holes tapped through the 9 mm casting top; 2 × Ø6 dowels; carries the two float guide pins (see the base plate drawing) | Steel supplier | Corner-hole positions and depth (sheet 9.9), 9.8, 9.10 | Proposed |
 | 22 | Filter-regulator | 1 | With gauge, 1/4" ports, set to 5.0 bar | Pneumatics supplier | — | Committed |
-| 23 | Solenoid valve | 1 | 5/2 single solenoid, spring return, 24 VDC | Pneumatics supplier | — | Committed |
+| 23 | Solenoid valve | 1 | 5/2 single solenoid, spring return, 24 VDC | Pneumatics supplier | Ordered 6 Nov 2026 | Purchased |
 | 24 | Flow controls | 2 | Meter-out, push-in, 10 mm tube × R3/8, in place of the PC10-03 fittings | Pneumatics supplier | Port thread | Purchased |
 | 25 | Silencers | 2 | To suit the valve exhaust ports | Pneumatics supplier | Valve choice | Purchased |
-| 26 | Tube and fittings | 1 lot | 10 mm PU tube about 3 m; PC10-02 fittings for the valve's 1/4 BSP ports | Pneumatics supplier | — | Committed |
+| 26 | Tube and fittings | 1 lot | 10 mm PU tube about 3 m; PC10-02 fittings for the valve's 1/4 BSP ports | Pneumatics supplier | On hand (6 Nov 2026); confirm about 3 m of 10 mm tube and 3 × PC10-02 | Purchased |
 | 27 | Release button | 1 | Momentary pushbutton, panel mount, front faceplate | Electrical supplier | — | Committed |
 | 28 | Valve relay | 1 | K1: 24 VDC coil drawing under 50 mA (so an Acorn open-collector output can drive it), contacts rated at least 1 A DC, one spare NO for the Acorn input; flyback diode | Electrical supplier | Acorn I/O | Proposed |
 | 29 | Consumables | 1 lot | MoS₂ grease, anti-seize, thread-locker | Hardware store | — | Committed |
