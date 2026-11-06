@@ -440,7 +440,7 @@ Square the bar end first. Mill each blank's width down from the 160: side plates
 | 10 × 30 × 100 | Thrust bar (10 × 30 × 42) and stop block (10 × 20 × 42) | Two blanks of 44 (44 + 3.5 + 44 = 91.5); mill the stop block down to 20 wide | About 8.5 | Ordered and received 6 Nov 2026 |
 | 25 × 20 × 100 | Two lugs (40 × 24 × 20) | Two blanks of 42 (42 + 3.5 + 42 = 87.5) | About 12.5 (ordered 100 long rather than 90, which would have left only 2.5) | Ordered and received 6 Nov 2026 |
 
-The bar needs to be at least 608 long (650 recommended, to allow for squaring the end and a wandering cut). The strips beside each blank (27, 42 and 57 wide) are the spare; nothing else in the design needs 12 mm.
+The bar needs to be at least 608 long; 1000 was bought (6 Nov 2026), so about 390 × 160 is left after the four blanks: enough to remake any part, including both side plates. The strips beside each blank (27, 42 and 57 wide) are the spare; nothing else in the design needs 12 mm.
 
 **Machining sequence: wedge and anvil.** Both come out of the Ø50 bar with every face cleaning up (wedge section diagonal 47.2 mm and anvil 46.8 mm, including grinding allowance).
 
@@ -782,7 +782,7 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | --- | --- | --- |
 | Tormach AU distributor | 3 | 2 sets of 31319 washers (16), quote pending |
 | Edcon Steel (ordered 29 Oct 2026) | 4, 5, 6, 9, 10, 12 | 4140/709M peeled round: Ø16 × 1 m, Ø50 × 150, Ø65 for the collar; O1 ground flat stock 40 × 5 × 500; Ø5 W1 silver steel 2 × 1 m |
-| Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | All 6061-T6 (the 12 × 160 flat bar may be 6060-T5: record what was supplied). Flat bar 12 × 160, at least 608 long (650 recommended): side plates 2 × 130 × 189, base plate (115 × 107) and mount plate (100 × 100) cut one after another along the bar. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). Ordered and received 6 Nov 2026: the 20 × 65 × 50 roof block stock and both flats. 12 × 160 flat bar purchased 6 Nov 2026 (the 400 × 250 plate couldn't be sourced). |
+| Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | All 6061-T6 (the 12 × 160 flat bar may be 6060-T5: record what was supplied). Flat bar 12 × 160, at least 608 long (650 recommended): side plates 2 × 130 × 189, base plate (115 × 107) and mount plate (100 × 100) cut one after another along the bar. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). Ordered and received 6 Nov 2026: the 20 × 65 × 50 roof block stock and both flats. 12 × 160 flat bar, 1000 long, purchased 6 Nov 2026 (the 400 × 250 plate couldn't be sourced). |
 | Engineering supplier | 12, 17, 18, 20 | Mild steel 16 × 100 × 70 (fork plate); 2 mm brass sheet about 100 × 50 (cages); bronze strip 3 × 25 × 40; Ø12 h6 ground rod 2 × 140; 2 bronze bushes Ø12/Ø16 × 20; 4 × Ø12 shaft collars |
 | Gas spring supplier | 32 | Z-axis gas strut, once the head weight is measured (see Z-axis gas strut) |
 | Fasteners | 7, 8, and the hardware list | Everything in the hardware list below: screws, dowels, springs, e-clips and thread inserts |
