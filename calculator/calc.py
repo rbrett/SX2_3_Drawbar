@@ -48,7 +48,7 @@ inputs=[
  ('E','Young\'s modulus, steel',210,'GPa','Standard value',False),
  ('nu','Poisson\'s ratio, steel',0.3,'','Standard value',False),
  ('Yh','Track yield, hardened 4140 (wedge, anvil)',1380,'MPa','Atlas 4140 datasheet: yield above 1380 MPa when tempered 175-230 C',False),
- ('Ys','Track yield, 4140 as supplied',740,'MPa','Atlas 4140 datasheet: condition U, 0.2% proof 740 MPa min (bar to 180 mm)',False),
+ ('Ys','Track yield, 4140 as supplied',740,'MPa','Atlas 4140 datasheet: as supplied, 0.2% proof 740 MPa min, 269-331 HB (bar to 180 mm); check Edcon certificate',False),
  ('ky','Line-contact first yield, p0 / yield',1.79,'','Johnson, Contact Mechanics (1985), von Mises; from memory',False),
  ('tw','Wedge thickness at the trailing end',23.5,'mm','Wedge drawing',False),
  ('hc','Hole centre below the wedge top',11.75,'mm','Wedge drawing (centred)',False),
@@ -58,6 +58,25 @@ inputs=[
  ('ld','Drill depth',18,'mm','Wedge drawing',False),
  ('tp','Roof wear plate thickness',5,'mm','O1 40 x 5 ground flat stock (ordered 29 Oct 2026)',False),
  ('S2','Hard stop beyond the release stroke',0.3,'mm','Design: stop at s_r + 0.3',False),
+ ('AsL','Drawbar lower thread stress area, M12 x 1.75',84.3,'mm2','ISO 898-1 thread table, from memory (collet supplied 7 Nov 2026 is M12 x 1.75)',False),
+ ('dL','Drawbar lower thread, nominal diameter',12,'mm','M12 x 1.75',False),
+ ('pL','Drawbar lower thread pitch',1.75,'mm','M12 x 1.75',False),
+ ('dT','Top thread (nut and push pad), major diameter',11.11,'mm','7/16-20 UNF stays: the 11.4 washer bore must pass over it',False),
+ ('pT','Top thread pitch',1.27,'mm','7/16-20 UNF',False),
+ ('lpad','Push pad thread engagement',6,'mm','Push pad drawing',False),
+ ('Kt','Nut factor for the test-drawbar torque',0.2,'','Typical dry steel value, from memory (about 0.15 oiled)',False),
+ ('dcen','Collar centring hole',12.05,'mm','Collar drawing (opened from 11.3 on 7 Nov 2026 to pass the M12 thread)',False),
+ ('dmaj','M12 thread major diameter, maximum',11.966,'mm','6g tolerance, from memory; turn to about 11.95',False),
+ ('z1','Collar top screw row below the shoulder underside',25.5,'mm','Collar drawing (moved from 20 on 7 Nov 2026)',False),
+ ('hd','Collar screw head diameter',13,'mm','M8 socket head, ISO 4762 dk = 13 (from memory); sits in a 14 counterbore',False),
+ ('gf','Fork top to flange underside running gap',1.0,'mm','Design 0.5-1 mm (worst case 1)',False),
+ ('tf','Fork plate thickness',16,'mm','Fork drawing',False),
+ ('skirt','Collar skirt length below the spindle end face',58,'mm','Collar drawing',False),
+ ('su','Spindle stick-up above the pulley top',64,'mm','Measured',False),
+ ('tfoot','Side-plate foot width (plate thickness)',12,'mm','12 x 160 bar',False),
+ ('hfoot','Side-plate foot depth',20,'mm','Side plate drawing',False),
+ ('afoot','Side-plate foot load arm',10,'mm','Fork bearing centre to the window corner (my estimate)',False),
+ ('Yal','12 mm bar proof stress, 6060-T5',120,'MPa','EN 755-2 via Aalco 6060-T5 datasheet; bar confirmed 6060 on 7 Nov 2026, temper to confirm',False),
 ]
 ref={}
 for k,(key,lab,val,unit,src,pend) in enumerate(inputs):
@@ -98,7 +117,8 @@ add('Lfree','Stack free length',f'={R["n"]}*{R["l0"]}','mm','0.0')
 add('Lpre','Stack preloaded length (set to this)',f'={R["n"]}*({R["l0"]}-{{sp}})','mm','0.0')
 add('ztop','Top thrust washer top above spindle face',f'={R["sh"]}+{R["tb"]}+{{Lpre}}+{R["tt"]}','mm','0.0')
 add('Ldb','Drawbar overall length',f'={R["H"]}+{{ztop}}+{R["tth"]}','mm','0')
-add('Lg','Guide section length (11.2 mm)',f'=3+{{ztop}}','mm','0.0')
+add('Lland','Centring land length (12.0 mm, Z -3 to +5.5)',f'=3+{R["sh"]}-0.5','mm','0.0')
+add('Lg','Guide section length (11.2 mm, Z +5.5 up)',f'={{ztop}}-({R["sh"]}-0.5)','mm','0.0')
 add('Lb','Body length (11.0 mm)',f'={R["H"]}-{R["L1"]}-3','mm','0')
 add('Fcmax','Cylinder push at full supply',f'={{A}}*{R["pmax"]}/10/1000','kN','0.00')
 add('cl','Stuck-collet collar load at regulator',f'={{Fav}}-{R["W"]}','kN','0.0')
@@ -121,6 +141,16 @@ add('wt','Wedge hole: wall to the slope at thread bottom',f'=({R["tw"]}-{R["lt"]
 add('wd','Wedge hole: wall to the slope at drill bottom',f'=({R["tw"]}-{R["ld"]}*TAN(RADIANS({R["th"]})))-({R["hc"]}+{R["Dd"]}/2)','mm','0.00',f'=IF({{wd}}>=2,"OK","Thin")')
 add('wtop','Wedge hole: wall to the top face',f'={R["hc"]}-{R["Dt"]}/2','mm','0.00')
 add('rbh','Roof block height to keep the plate face fixed',f'=24-{R["tp"]}','mm','0')
+add('sL','Lower thread (M12) tensile stress at preload',f'={R["W"]}*1000/{R["AsL"]}','MPa','0',f'=IF({{sL}}<=0.25*{R["Ys"]},"OK","Check")')
+add('tpad','Push pad thread shear, full supply (7/16-20, 6 mm)',f'={{Fdx}}*1000/(PI()*{R["dT"]}*{R["lpad"]}*0.5)','MPa','0',f'=IF({{tpad}}<=0.5*{R["Ys"]},"OK","Check")')
+add('turns','Preload nut turns past hand-tight (7/16-20 top thread)',f'={R["n"]}*{{sp}}/{R["pT"]}','turns','0.0')
+add('Ttest','Test-drawbar torque for preload W (M12, T = K F d)',f'={R["Kt"]}*{R["W"]}*{R["dL"]}','N m','0.0')
+add('qturn','Collet drop per quarter turn of the M12 test drawbar',f'={R["pL"]}/4','mm','0.00')
+add('cpass','M12 thread clearance through the collar centring hole',f'={R["dcen"]}-{R["dmaj"]}','mm','0.000',f'=IF({{cpass}}>0,"Passes","Will not pass")')
+add('chead','Collar top-row screw heads below the fork plate',f'={R["z1"]}-{R["hd"]}/2-({R["gf"]}+{R["tf"]})','mm','0.0',f'=IF({{chead}}>=2,"OK",IF({{chead}}>0,"Thin","Clash"))')
+add('cpul','Collar skirt clearance above the pulley',f'={R["su"]}-{R["skirt"]}','mm','0.0',f'=IF({{cpul}}>=5,"OK","Thin")')
+add('sfoot','Side-plate foot bending, full supply',f'={{Fdx}}/4*1000*{R["afoot"]}/({R["tfoot"]}*{R["hfoot"]}^2/6)','MPa','0')
+add('mfoot','Foot margin on 6060 proof stress',f'={R["Yal"]}/{{sfoot}}','x','0.0',f'=IF({{mfoot}}>=2,"OK",IF({{mfoot}}>=1.5,"Thin","Low"))')
 add('Fh','Anvil forward thrust, full supply',f'={{Fdx}}*TAN(RADIANS({R["th"]}))','kN','0.00')
 add('air','Free air per release',f'=({{A}}+({{A}}-PI()*{R["d"]}^2/4))*{{trav}}*({R["p"]}+1.013)/1.013/1000000','L','0.00')
 add('mass','Stack mass',f'={R["n"]}*{R["mw"]}','g','0')
@@ -202,6 +232,7 @@ notes=['Notes and sources',
 'Stack heights exclude the nut and pad; drawbar length = H + shoulder + base washer + preloaded stack + top washer + top thread.',
 'Contact check (29 Oct 2026): first yield of a line contact at p0 = 1.79 x yield (von Mises; Johnson 1985, from memory). Wedge and anvil are 4140 hardened and tempered at about 200 C (Atlas: yield above 1380 MPa). https://atlassteels.com.au/wp-content/uploads/2021/09/Through-Hardening-Low-Alloy-Steel-Bar-4140-Grade-Data-Sheet-10-09-21-1.pdf',
 'Floating joint SMC JA40-14-150, 4400 N max tension/compression. https://static.smc.eu/pdf/JA-A_EU.pdf . Wedge M14 x 1.5 hole kept to 14 deep thread, 18 deep drill so the 9.5 deg slope leaves at least about 2.4 mm wall; the JA nut bears on the end face.',
+'7 Nov 2026: the flat-nose collet supplied is M12 x 1.75, so the drawbar lower thread is M12 (stress area 84.3 mm2), with a 12.0 centring land in a 12.05 collar hole; the top thread stays 7/16-20 because the washers (11.4 bore) pass over it. Preload is set by stack compression, so it does not change. Collar screw rows moved to 25.5/37.5/49.5 below the shoulder and the skirt to 58 to clear the 16 mm fork. 12 mm plates are 6060 (EN 755-2 6060-T5: 120 MPa proof min, https://www.aalco.co.uk/datasheets/Aluminium-Alloy-6060-T5--Extrusions_144.ashx).',
 'Yellow inputs are pending measurements or unpublished data: release stroke, push-out force, washer rate and heights, rod diameter, H and L1.','If release needs more stroke than the 8-washer stack allows, fit a genuine Tormach collet before adding washers (design decision 28 Oct 2026).']
 for k,t in enumerate(notes):
     wn.cell(1+k,1,t).font=title if k==0 else black
