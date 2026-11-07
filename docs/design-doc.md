@@ -22,7 +22,7 @@ The design is fixed by six requirements and the measured machine data below. Mea
 | Item | Value | Status |
 | --- | --- | --- |
 | Spindle taper | R8 | Measured |
-| Collet | 3/4" TTS-style R8, 7/16-20 UNF | On order |
+| Collet | 3/4" flat-nose TTS R8, M12 × 1.75 (received 7 Nov 2026) | On order |
 | TTS shank diameter | 19.00 mm, genuine and copies | Measured |
 | Spindle top | 6-spline, 21.9 mm over crests, no thread | Measured |
 | Spindle bore at top | 13.1 mm | Measured |
@@ -31,11 +31,11 @@ The design is fixed by six requirements and the measured machine data below. Mea
 | Drawbar seat | Spindle end face | Measured |
 | Quill | Locked fully up under CNC; Z moves the head | Confirmed |
 | Head top | 255 × 115 mm; spindle 60 mm from front, centred | Measured |
-| Mounting | Tapped holes in head sides, top 20 mm band clear | Proposed |
+| Mounting | 12 mm base plate on the flat head top: 4 × M6 tapped through the 9 mm casting, 2 × Ø6 dowels (decided 29 Oct 2026) | Proposed |
 | Headroom | Over 1,000 mm | Measured |
 | Existing drawbar | 7/16-20 UNF, 250 mm rod + 15 mm head, 11.5 mm body | Measured |
-| Collet stick-out (sample) | 3.8 mm proud of spindle nose, clamped | Measured |
-| Holder flange to spindle nose | 2 mm gap | Measured |
+| Collet stick-out (sample) | 3.8 mm proud of spindle nose, clamped (sample collet; the flat-nose collet is still to measure) | Measured |
+| Holder flange to spindle nose | 2 mm gap (sample collet; recheck with the flat-nose collet) | Measured |
 | Release stroke | — | Pending |
 | Holder counterbore depth | 2.0 mm rebate in holder face | Measured |
 | Air supply | 90PSI air is available at up to 9CFM. | Confirmed |
@@ -64,7 +64,7 @@ Three consequences drive the detail design:
 
 - **The cap clamp only ever carries P**, the collet push-out force, never W. P is small for a non-locking R8 taper; the "taper break effort" test on the measurement sheet gives a first feel for it.
 - **A hard stop on the yoke ends the stroke.** Any cylinder force beyond what the stroke needs goes into the stop, inside the yoke. It never reaches the drawbar, the cap clamp or the washers. The same stop caps washer deflection at its allowable limit.
-- **The yoke floats.** It rests on stop collars on guide pins fixed to the head sides, and lifts off them by the hook gap when it actuates, so the cylinder reaction stays in the yoke. The head carries only the yoke's weight and the hold-down spring force; the spindle carries nothing.
+- **The yoke floats.** It rests on stop collars on two guide pins standing on the head-top base plate, and lifts off them by the hook gap when it actuates, so the cylinder reaction stays in the yoke. The head carries only the yoke's weight and the hold-down spring force; the spindle carries nothing.
 
 The principle follows Hoss's floating drawbar (PDB v2 / PDB3) and Shane Wighton's X2 design, which pulls against a flange on the spindle with a running gap.
 
@@ -75,12 +75,12 @@ Eight parts make up the drawbar; dimensions here are preliminary and get fixed o
 | Component | Design | Still to fix |
 | --- | --- | --- |
 | Spindle cap | Two-piece clamp collar, 52 mm OD, bore a slip fit on the 21.9 mm spline crests. Internal shoulder seats on the spindle end face and centres the drawbar; the washers sit on its top face. Clamp of 3 × M8 per side grips the spline crests. External flange for the yoke hook. Sits at least 5 mm clear of the pulley. | Length, flange size, clamp holding vs P |
-| Drawbar | 4140 high-tensile. 7/16-20 UNF to the collet; body under 13.1 mm through the spindle; 11.0 mm body; 11.2 mm guide section through the cap shoulder and washer stack; 7/16-20 top thread; heavy preload nut plus jam nut; hardened push pad on top. | Overall length, collet thread engagement |
+| Drawbar | 4140 high-tensile. M12 × 1.75 to the collet (changed from 7/16-20 on 7 Nov 2026 to suit the collet supplied); 11.0 mm body through the 13.1 mm spindle bore; 12.0 mm centring land in the cap shoulder; 11.2 mm guide section through the washer stack; 7/16-20 top thread; heavy preload nut plus jam nut; hardened push pad on top. | Overall length, collet thread engagement |
 | Washer stack | 8 × genuine Tormach 31319, singly in series, guided on the drawbar, hardened thrust washers at each end. Preload set by measured stack height, cross-checked against Tormach's two turns past hand-tight. | Fixed at 8; if the stroke is too long, fit a genuine Tormach collet |
-| Housing (yoke) | Housing straddling the cap. Forked lower plate hooks under the cap flange with a 0.5–1 mm running gap. Side plates carry the roof block, rollers, wedge and cylinder mount plate. A hard stop on the wedge ends the stroke. | Plate sizes, stop position |
+| Housing (yoke) | Housing straddling the cap. Forked lower plate hooks under the cap flange with a 0.5–1 mm running gap. Side plates carry the roof block, rollers, wedge and cylinder mount plate. A hard stop on the wedge ends the stroke. | Settled: see the side plate, fork and stop block drawings |
 | Wedge and rollers | A 9.5° hardened 4140 wedge, pushed rearward by the cylinder, runs between two pairs of Ø14 × 36 hardened rollers: the upper pair under the roof wear plate, the lower pair on the anvil, which presses the push pad. Springs hold the anvil 1 mm clear at rest. | Ratio 6:1, fixed by the wedge angle |
 | Cylinder | SDA 80 × 25 compact cylinder (Airtac pattern, already owned; the SDA 80 × 30 bought from AliExpress is now a spare), double-acting, rubber bumpers. Front face bolted to the housing mount plate; a floating joint couples the rod to the wedge. | Body 94.07 mm square × 66.1 mm, measured; mounting and rod-end threads: see Cylinder |
-| Mounts | A 10 mm base plate on the head top, fixed with 4 × M6 into new holes tapped through the 9 mm casting top and located by 2 × Ø6 dowels; it carries two guide pins, so the head side walls need no new holes. Vertical guide pins; the yoke slides on bronze bushes and rests on adjustable stop collars that set the hook gap; light springs hold it down against Z-axis decelerations. | Hole positions, spring rate |
+| Mounts | A 12 mm base plate on the head top, fixed with 4 × M6 into new holes tapped through the 9 mm casting top and located by 2 × Ø6 dowels; it carries two guide pins, so the head side walls need no new holes. Vertical guide pins; the yoke slides on bronze bushes and rests on adjustable stop collars that set the hook gap; light springs hold it down against Z-axis decelerations. | Settled: see the base plate drawing and List B row 20 |
 | Controls | 5/2 solenoid valve, 24 VDC, with meter-out flow controls to stop the cylinder slamming. Filter-regulator. Release button on the front faceplate, wired through the casting. Valve enabled only when the CNC controller reports spindle stopped; the same output can later serve an M-code tool-change macro. | Controller signal (24 VDC for the valve comes from the control supply's spare output) |
 
 ## Sizing
@@ -134,7 +134,7 @@ s_p + s_r \le 0.75\,h_0\,n
 - At i = 6: F\_cyl = 2.27 kN, so D = 76 mm at 5.0 bar. Next standard bore up is 80 mm: 13.6 kN at the drawbar, 11% margin, and an expected release pressure of about 4.5 bar.
 - Stroke: s\_r = 1.2 mm, g = 1 mm, i = 6, so i(s\_r + g) = 13.2 mm, well within the SDA's 25 mm stroke (the hard stop needs 15 mm, and even the washer-flat limit of about 1.9 mm needs only 17.4 mm). With 8 washers the stroke limit is the washers going flat at about 2 mm, not the cylinder.
 - At the full 6.2 bar the 80 mm cylinder at 6:1 can deliver about 16.8 kN at the drawbar; everything above F\_d ends in the hard stop. Air use is about 0.8 L of free air per release, negligible against 9 CFM (about 255 L/min).
-- Drawbar thread stress at 8.2 kN: 7/16-20 tensile stress area about 76.6 mm² (standard thread tables, from memory), so about 107 MPa, well under the roughly 600 MPa proof stress of grade 8 / 8.8 material.
+- Drawbar thread stress at 8.2 kN: M12 × 1.75 tensile stress area about 84.3 mm² (ISO 898-1 thread tables, from memory), so about 97 MPa, well under the roughly 600 MPa proof stress of grade 8 / 8.8 material.
 
 ## Drawbar and washer stack
 
@@ -192,35 +192,35 @@ For scale, ISO 21940-11 grade G2.5, typical for machine-tool spindles (from memo
 | --- | --- |
 | Material | 4140 pre-hardened |
 | Spline bore | 22.0 mm, slip fit on the 21.9 mm crests |
-| Clamp skirt | 54 mm below the spindle end face, leaving 10 mm clear of the pulley |
+| Clamp skirt | 58 mm below the spindle end face, leaving 6 mm clear of the pulley |
 | Clamp | Two-piece, 3 × M8 12.9 per side at 32 Nm (see Spindle collar detail) |
-| Shoulder | 6 mm thick; 11.3 mm hole, a close fit on the drawbar guide so it centres the drawbar in the 13.1 mm spindle bore |
+| Shoulder | 6 mm thick; 12.05 mm hole, a close fit on the drawbar's 12.0 centring land so it centres the drawbar in the 13.1 mm spindle bore |
 | Washer seat | Top face of the shoulder, 32 mm diameter, flat and smooth |
 | OD | 52 mm |
 | Hook flange | 64 mm OD × 6 mm, level with the shoulder |
-| Overall height | 60 mm |
+| Overall height | 64 mm (6 shoulder + 58 skirt) |
 | Shroud | Optional light sleeve to keep chips and coolant off the stack; not load-bearing |
 
 **Drawbar**
 
 | Feature | Dimension |
 | --- | --- |
-| Material | 4140 condition T (about 270–300 HB), turned from 16 mm bar |
-| Lower thread | 7/16-20 UNF; length = collet thread depth + 3 mm (row 3.7, pending) |
-| Body | 11.0 mm (down from the old 11.5 so it passes the collar's 11.3 centring hole), through the 13.1 mm spindle bore |
-| Guide section | 11.2 mm through the cap shoulder and washer stack, about 0.2 mm clearance in the 11.4 mm washer bore; harden if practical (DIN guidance for guide surfaces is at least 55 HRC) |
+| Material | 4140/709M pre-hardened as supplied (Atlas quotes 269–331 HB; check Edcon's certificate), turned from 16 mm bar |
+| Lower thread | M12 × 1.75; length = collet thread depth + 3 mm (row 3.7, pending) |
+| Body | 11.0 mm (down from the old 11.5); it passes the collar's 12.05 centring hole and runs in the 13.1 mm spindle bore |
+| Guide section | 12.0 mm centring land in the cap shoulder, then 11.2 mm through the washer stack, about 0.2 mm clearance in the 11.4 mm washer bore; harden if practical (DIN guidance for guide surfaces is at least 55 HRC) |
 | Tip to spindle end face | About 250 mm, from the existing drawbar; confirm with the new collet (row 3.5) |
 | Top thread | 7/16-20 UNF, about 28 mm, for nut, jam nut and adjustment |
 | Above spindle end face | About 61.4 mm to the thread end; push pad top at 63.4 mm |
 | Overall length | About 311 mm |
 | Push pad | Hardened, screwed on and thread-locked |
-| Tension at preload | 8.2 kN on about 76.6 mm² stress area, about 107 MPa |
+| Tension at preload | 8.2 kN on about 84.3 mm² (M12 × 1.75 stress area), about 97 MPa |
 
-Set preload by stack height, not torque. Measure the free height of your washers first (viking45 measured 2.9 mm), then tighten the nut until the stack between the thrust washers is 8 × (free height − 0.35 mm): about 20.4 mm. Lock it with the jam nut. As a cross-check, that is about 2.8 mm of compression, about 2.2 turns of the 7/16-20 thread past hand-tight, close to Tormach's "hand tight plus two turns". Re-check after two weeks: a stack loses about 5% of its force in the first two weeks ([Surisa](https://www.surisa.es/en/collections/disc-springs-din-2093)).
+Set preload by stack height, not torque. Measure the free height of your washers first (viking45 measured 2.9 mm), then tighten the nut until the stack between the thrust washers is 8 × (free height − 0.35 mm): about 20.4 mm. Lock it with the jam nut. As a cross-check, that is about 2.8 mm of compression, about 2.2 turns of the 7/16-20 thread past hand-tight, close to Tormach's "hand tight plus two turns". The M12 collet thread (7 Nov 2026) doesn't change any of this: the preload is set by the washer stack's compression, not by either thread, so it stays 8.2 kN. The top thread stays 7/16-20 because the washers (11.4 bore) slide on over it, and an M12 top thread would not pass through them. At 8.2 kN the M12 lower thread runs at about 97 MPa on its 84.3 mm² stress area. Re-check after two weeks: a stack loses about 5% of its force in the first two weeks ([Surisa](https://www.surisa.es/en/collections/disc-springs-din-2093)).
 
 ## Spindle collar detail
 
-A two-piece clamp collar with a 54 mm skirt and 3 × M8 12.9 per side is estimated to hold about 14 kN axially. With the regulator at 5.0 bar and the 6:1 wedge, the worst case of a stuck collet loads it to about 5.4 kN, a margin of about 2.6. The holding figure is an estimate, so a witness line still checks it in service, and a positive groove is the fallback if the spindle can be machined.
+A two-piece clamp collar with a 58 mm skirt and 3 × M8 12.9 per side is estimated to hold about 14 kN axially. With the regulator at 5.0 bar and the 6:1 wedge, the worst case of a stuck collet loads it to about 5.4 kN, a margin of about 2.6. The holding figure is an estimate, so a witness line still checks it in service, and a positive groove is the fallback if the spindle can be machined.
 
 **Worst-case load** (stuck collet)
 
@@ -242,7 +242,7 @@ Axial holding ≈ 0.25 × 2π × μ × T, where T is the screw tension across on
 | --- | --- | --- | --- | --- | --- |
 | One-piece, 25 mm skirt (previous) | 2 × M6 at 16 Nm | 26 | about 6 | 1.1 | 42 |
 | Two-piece, 40 mm skirt | 3 × M6 per side at 16 Nm | 40 | about 9.4 | 1.7 | 44 |
-| **Two-piece, 54 mm skirt (recommended)** | **3 × M8 per side at 32 Nm** | **60** | **about 14** | **2.6** | **52** |
+| **Two-piece, 58 mm skirt (recommended)** | **3 × M8 per side at 32 Nm** | **60** | **about 14** | **2.6** | **52** |
 
 The two-piece form also clamps more evenly than a single-slit ring, is self-balancing, and its centring hole stays put when the screws are tightened. M8 12.9 at 32 Nm is about 20 kN per screw, roughly 56% of its proof load of about 35 kN (from memory).
 
@@ -251,17 +251,17 @@ The two-piece form also clamps more evenly than a single-slit ring, is self-bala
 | Feature | Dimension and notes |
 | --- | --- |
 | Type | Two-piece clamp collar, split on a diameter through skirt, shoulder and flange |
-| Material | 4140 condition T (about 270–300 HB) |
+| Material | 4140/709M pre-hardened as supplied (Atlas quotes 269–331 HB; check Edcon's certificate) |
 | Spline bore | 22.0 mm, finished with the halves shimmed apart (below) so they close onto the 21.9 mm crests |
 | Shoulder | 6 mm thick; underside flat and square to the bore, seats on the spindle end face |
-| Centring hole | 11.3 +0.02/0 mm through the shoulder, close fit on the 11.2 mm drawbar guide |
+| Centring hole | 12.05 +0.02/0 mm through the shoulder, close fit on the drawbar's 12.0 centring land; the M12 thread (11.97 maximum major diameter) passes through it |
 | Washer seat | Top face of the shoulder, 32 mm diameter, flat, smooth and square to the bore |
-| Clamp skirt | 54 mm below the shoulder; leaves 10 mm clear of the pulley (64 mm stick-up). Lengthened from 40 mm so the top screw heads clear the fork plate |
+| Clamp skirt | 58 mm below the shoulder; leaves 6 mm clear of the pulley (64 mm stick-up). Lengthened from 40 mm, then from 54 to 58 mm on 7 Nov 2026 when the screw rows moved down to clear the 16 mm fork plate |
 | OD | 52 mm |
-| Clamp screws | 3 × M8 × 25 socket head, grade 12.9, per side, on axes 17 mm from the bore axis, at 20, 32 and 44 mm below the shoulder; heads on alternate halves row by row. The heads stand out to about Ø60, inside the Ø64 flange; 32 Nm, tightened evenly so both joint gaps stay equal |
+| Clamp screws | 3 × M8 × 25 socket head, grade 12.9, per side, on axes 17 mm from the bore axis, at 25.5, 37.5 and 49.5 mm below the shoulder (moved down 5.5 mm on 7 Nov 2026: at 20 mm the top-row heads, Z −13.5 to −26.5 and out to about R31, reached 3.5 mm into the path of the 16 mm fork plate, Z −17 to −1 inside R27; they now clear it by 2 mm); heads on alternate halves row by row. The heads stand out to about Ø60, inside the Ø64 flange; 32 Nm, tightened evenly so both joint gaps stay equal |
 | Hook flange | 64 mm OD × 6 mm, level with the shoulder; underside flat, carries the yoke hook |
 | Clamp surfaces | Bore as turned, not polished; degrease bore and spline crests before fitting, and keep the MoS₂ from the washer stack off them |
-| Mass | About 0.85 kg (calculated) |
+| Mass | About 0.9 kg (calculated) |
 
 &#91;embedded content: collar machining drawing · half section, outside view, plan\]
 
@@ -270,7 +270,7 @@ The two-piece form also clamps more evenly than a single-slit ring, is self-bala
 1. Turn the blank: OD, flange, and rough bores about 1 mm undersize.
 2. Drill and tap the six M8 holes and counterbore the heads, then split on the diameter with a slitting saw (about 1.5 mm kerf).
 3. Reassemble the halves with 0.2 mm shims in both joints and torque the screws.
-4. In one setting, finish-bore 22.0 mm and the 11.3 mm centring hole, and face the shoulder underside and washer seat.
+4. In one setting, finish-bore 22.0 mm and the 12.05 mm centring hole, and face the shoulder underside and washer seat.
 5. Remove the shims for fitting, so each joint can close 0.2 mm onto the spline.
 
 **Checks and fallback**
@@ -285,9 +285,10 @@ The drawbar is four turned sections from one piece of 16 mm 4140 bar, about 311 
 
 | Section, from the collet end | Diameter | Length | Notes |
 | --- | --- | --- | --- |
-| A. Lower thread | 7/16-20 UNF-2A | L1 = collet thread depth + 3 mm (row 3.7, pending) | 45° chamfer on the tip; 1.5 mm thread relief at the runout |
-| B. Body | 11.0 ±0.1 mm | H − L1 − 3 mm (about 225 mm; H about 250 mm, row 3.5, pending) | Under the collar's 11.3 centring hole, so the bar and stack lift out with the collar still clamped; runs in the 13.1 mm spindle bore |
-| C. Guide | 11.2 −0.02/−0.05 mm | From 3 mm below the spindle end face to 33.4 mm above it: about 36 mm | Fine-turned or ground; nitride or harden if practical. Runs through the collar centring hole and the washer bores (about 0.2 mm clearance in the 11.4 mm washer bore) |
+| A. Lower thread | M12 × 1.75-6g, major diameter held at about 11.95 | L1 = collet thread depth + 3 mm (row 3.7, pending) | 45° chamfer on the tip; 1.5 mm thread relief at the runout |
+| B. Body | 11.0 ±0.1 mm | H − L1 − 3 mm (about 225 mm; H about 250 mm, row 3.5, pending) | Under the collar's 12.05 centring hole (as is the M12 thread), so the bar and stack lift out with the collar still clamped; runs in the 13.1 mm spindle bore |
+| C1. Centring land | 12.0 −0.01/−0.03 mm | From 3 mm below the spindle end face to 5.5 mm above it: 8.5 mm | Added 7 Nov 2026 for the M12 collet thread: a close fit in the collar's 12.05 centring hole, so the drawbar is still centred in the 13.1 spindle bore. It stops 0.5 below the shoulder top, so the base thrust washer seats on the collar, not on the step |
+| C2. Guide | 11.2 −0.02/−0.05 mm | From 5.5 to 33.4 mm above the spindle end face: about 28 mm | Fine-turned or ground; nitride or harden if practical. Runs through the thrust washers and the washer bores (about 0.2 mm clearance in the 11.4 mm washer bore) |
 | D. Top thread | 7/16-20 UNF-2A | 28 mm | Preload nut, jam nut, about 5 mm adjustment, push pad |
 | Push pad | 16 mm × 8 mm | 6 mm on the thread, top about 63.4 mm above the spindle end face | 4140 from the Ø16 drawbar offcut, hardened with the wedge and anvil; tapped 7/16-20 blind; flat top; thread-locked |
 
@@ -296,7 +297,7 @@ The drawbar is four turned sections from one piece of 16 mm 4140 bar, about 311 
 **Manufacturing notes**
 
 - Turn between centres so the guide section and both threads stay concentric; aim for 0.02 mm runout or better on the guide (my judgement).
-- Single-point the threads to class 2A and check them with a 7/16-20 nut and the new collet before parting off.
+- Single-point the lower thread to M12 × 1.75-6g with the major diameter at about 11.95, so it passes the collar's 12.05 hole, and check it in the new collet. Single-point the top thread to 7/16-20 UNF-2A and check it with the preload nut. Do both before parting off.
 - Put a small undercut at each diameter step rather than a sharp corner; the body-to-guide step sits in the spindle bore, not under load.
 - Overall length = H + 33.4 + 28 mm, about 311 mm for H = 250 mm and 8 washers.
 
@@ -409,7 +410,7 @@ If you'd rather not quench at home, a commercial heat-treater can do steps 3–6
 | 4140 Ø50 | Wedge | 80 × 40 × 23.5, bar axis along the 80 | 82 | 140 with the anvil and washers (you have 150) |
 | 4140 Ø50 | Anvil | 40 × 40 × 22.7, bar axis along one 40 side | 42 | (from the same bar) |
 | 4140 Ø50 | 2 thrust washers | Ø32 × 11.3 bore, 3 and 4 thick | 14, turned off the bar end before sawing | (from the same bar; or the Ø65 collar offcut) |
-| 4140 Ø65 | Collar | Ø64 flange, 60 high | 66 | 66 |
+| 4140 Ø65 | Collar | Ø64 flange, 64 high | 70 | 70 |
 | W1 Ø5 | 4 cross pins | about 75 each, confirmed when the side plates are drawn | 4 × 80 | 335 (you have 2 m) |
 | O1 40 × 5 | Wear plate | 60 × 40 × 5 | 65 | 65 (you have 500) |
 
@@ -421,7 +422,7 @@ If you'd rather not quench at home, a commercial heat-treater can do steps 3–6
 | 2 | Saw the wedge blank | 82 + 2 kerf | 52 |
 | 3 | Saw the anvil blank | 42 + 2 kerf | about 8 spare |
 
-Check each saw cut is square before facing: the wedge has 1 mm a side to face, and the anvil about 0.7 mm a side before its sides are milled to 40.6 and ground. If a cut goes wrong, make the washers from the Ø65 offcut left after the collar instead (that bar needs to be at least 80 long), which frees the first 14 mm of the Ø50.
+Check each saw cut is square before facing: the wedge has 1 mm a side to face, and the anvil about 0.7 mm a side before its sides are milled to 40.6 and ground. If a cut goes wrong, make the washers from the Ø65 offcut left after the collar instead (that bar then needs to be at least 84 long), which frees the first 14 mm of the Ø50.
 
 **Cutting schedule for the aluminium (added 2 Nov 2026; plate parts changed to 12 × 160 flat bar 6 Nov 2026).** Saw blade 3.5 mm wide (kerf). Blanks are about 1.5 mm a side oversize for milling to the finished outline. The 12 mm parts now come from 12 × 160 flat bar (purchased 6 Nov 2026) instead of a 400 × 250 plate, which couldn't be sourced. The blank sizes and cuts are my layout. Wide flat bar is often extruded 6060-T5 rather than 6061-T6: record the alloy as supplied. If it is 6060-T5 (minimum yield about 110 MPa, from memory), the highest plate stress (about 53 MPa in the side-plate feet) still has a safety factor of about 2, but fit Helicoils or use 2 × d engagement in the tapped holes.
 
@@ -454,7 +455,7 @@ The bar needs to be at least 608 long; 1000 was bought (6 Nov 2026), so about 39
 8. Grind as in steps 7–10 of the table, then check the match on the surface plate.
 9. Press the two Ø5 m6 × 10 dowels into the anvil, 4 mm proud each side.
 
-**Machining guidance: the other parts.** The 4140 is supplied pre-hardened (Atlas condition U: 269–331 HB), so carbide tooling is the easier choice. The collar and drawbar follow their own detail sections.
+**Machining guidance: the other parts.** The 4140 is supplied pre-hardened (Atlas quotes 269–331 HB; check Edcon's certificate for the actual condition), so carbide tooling is the easier choice. The collar and drawbar follow their own detail sections.
 
 | Part | From | Sequence | Watch |
 | --- | --- | --- | --- |
@@ -625,12 +626,16 @@ Windows 14.3 × 36.6, centres (17, 20.5) and (35, 20.5), 18 pitch; rollers Ø14 
 
 **Fitting the housing to the head.**
 
-1. Assemble the side plates and roof block with the M8s finger-tight, ream both Ø6 dowel holes through plate and block together, fit the dowels and tighten. Fit the thrust bar, stop block and cage pins.
+1. Build the housing on its side, in this order, because the anvil's lift pins stand 4 mm proud each side and cannot go in once both plates are on: (a) lay one side plate down, inner face up; (b) the anvil with its two lift pins in that plate's pocket, lift springs in the spring pocket; (c) the thrust bar with its bronze strip, M5s finger-tight; (d) the lower cage with its two rollers on the anvil slope; (e) the wedge, with the JA stud and nut already fitted, on the lower rollers; (f) the upper cage and rollers on the wedge; (g) the wear plate screwed to the roof block, then the roof block on top; (h) the second side plate, catching the lift pins in its pocket; (i) the stop block. Then fit the M8s finger-tight, ream both Ø6 dowel holes through plate and block together, fit the dowels and tighten everything. Last, the four cage cross pins with their springs and e-clips. Check the wedge runs its full stroke by hand before going on.
 2. Scrape the paint from the head top under the base plate. Turn a centring ring, bore Ø90 to fit the boss and OD Ø94 to fit the plate's cut-out, about 4 high. With the ring locating the plate, spot A and B through onto the head, drill Ø5.0 through the 9 mm top (grease the drill, vacuum the chips) and tap M6.
 3. Screw the plate down, then drill and ream the two D holes Ø6 through the plate and 8 deep into the head; fit the dowels. Remove the ring.
 4. Screw in the guide pins with retaining compound and fit the rest collars low.
 5. Fit the lugs loosely to the side plates, lower the housing onto the pins with the anvil clear of the push pad, and slide the fork in under the collar flange; fit its four screws. Raise the rest collars until the fork-to-flange gap is 0.5–1 mm on feelers, then tighten the lug screws with the housing hanging free on the pins. Fit the springs and top collars.
 6. Fit the cylinder and JA joint, set the spacer-tube length, then transfer the mount plate's M6 holes into the side plates' front edges and tap them.
+
+**Air lines and valve (added 7 Nov 2026; my suggestion, not from a source).** The cylinder rides on the floating housing, which moves with the head through 240 mm of Z and lifts about 1 mm on release. Mount the valve on the head's left side next to the cylinder ports, so the two 10 mm lines to the cylinder stay short, with a small slack loop for the float. Fix the filter-regulator to the column or stand where its gauge is visible, and run the supply to the valve with a loop, or in a drag chain, long enough for full Z travel. Point the silenced exhausts away from the operator. The coil cable follows the supply line and enters the casting through the front faceplate with the button wiring.
+
+**Reverting to a manual drawbar (requirement 6).** Taking the housing off is quick: undo the four fork screws, slide the fork out and lift the housing off its guide pins. The collar, stack and drawbar stay on the spindle and still clamp the tool, but a tool can't then be released by hand, because it takes about 12 kN at the push pad. To go back to manual use, take off the push pad, jam nut and preload nut, lift out the stack and drawbar, unclamp the collar, and fit a manual drawbar. The original 7/16-20 drawbar no longer fits the new M12 × 1.75 flat-nose collet, so either refit the original collet with it or make a plain M12 × 1.75 manual drawbar. The base plate and guide pins can stay; they don't get in the way of manual use.
 
 ## Cylinder
 
@@ -671,9 +676,9 @@ The valve is single-solenoid with spring return, so the tool stays clamped unles
 | 5/2 valve | Single solenoid, spring return, 24 VDC coil from the control supply's spare output; 1/4 BSP ports (e.g. Airtac 4V210-08) | De-energised = retract port pressurised = wedge withdrawn, anvil clear |
 | Flow controls | Meter-out, one on each cylinder port (or speed-control silencers on the valve exhausts) | Controls speed in both directions without slamming the wedge into the stop |
 | Silencers | On both valve exhausts | Noise |
-| Tube | 6–8 mm OD polyurethane, push-in fittings | Each release uses under 1 L of free air, so flow is not critical |
+| Tube | 10 mm OD polyurethane, push-in fittings (rows 24 and 26) | Each release uses under 1 L of free air, so flow is not critical |
 | Valve relay | Driven by a spare Acorn output; contact rated for the coil | The Acorn's open-collector outputs need a relay to drive a solenoid |
-| Hardware interlock | Normally closed contact of the spindle run relay, in series with the valve coil | Blocks release even if the software misbehaves |
+| Hardware interlock | K2T off-delay contact (opens while the spindle runs and for the coast-down time after) and K1, in series with the valve coil; see Control wiring | Blocks release even if the software misbehaves |
 | Lubricator | Not fitted | Modern cylinders come pre-greased; once air is lubricated it must stay lubricated (general practice, my judgement) |
 
 The interlock wiring stays a concept until the spindle drive and the free Acorn inputs and outputs are confirmed.
@@ -700,7 +705,7 @@ Set the parts in this order: collet, collar, preload, gaps, hard stop, then air.
 
 **Assembly and adjustment**
 
-1. **Collet.** Grind the nose so clamped stick-out is 1.5 mm or less. Clean the spindle taper; anti-seize the collet outside and threads.
+1. **Collet.** Measure the flat-nose collet's clamped stick-out; it should be 1.5 mm or less, so grind only if it isn't. Clean the spindle taper; anti-seize the collet outside and threads.
 2. **Collar.** Slide it down the spline until the shoulder sits on the spindle end face. Torque the six M8 screws evenly to 32 Nm, keeping both joint gaps equal. Scribe a witness line across collar and spindle.
 3. **Drawbar and stack.** With a TTS holder in the collet, thread the drawbar fully into the collet and record the turns. Fit the base thrust washer, then the washers in series (alternating), greased with MoS₂, then the top thrust washer and preload nut.
 4. **Preload.** Measure the washers' free height, then tighten the nut until the stack measures 8 × (free height − 0.35 mm) between the thrust washers: about 20.4 mm. Fit and lock the jam nut, then the push pad. Check the holder flange is down on the spindle nose: a 0.02 mm feeler should not enter.
@@ -744,26 +749,26 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | # | Item | Qty | Specification | Source | Waiting on | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Air cylinder | 1 | SDA 80 × 25 compact, double-acting (owned) | Owned | — | Purchased |
-| 2 | R8 collet, 3/4" | as ordered | TTS-style, 7/16-20 UNF; grind nose to ≤1.5 mm stick-out | Ordered | Arrival | Purchased |
+| 2 | R8 collet, 3/4" | as ordered | Flat-nose 3/4" TTS R8, M12 × 1.75 (received 7 Nov 2026); check clamped stick-out is ≤1.5 mm | Ordered | Arrival | Purchased |
 | 3 | Belleville washers | 2 sets (16) | Genuine Tormach 31319 (30.2 × 11.4 × 2.3 mm), sets of 8: one for the stack, one spare | Tormach | Quote from AU Tormach distributor | Committed |
 | 4 | Drawbar bar | 1 m | 4140/709M, 16 mm peeled round × 1 m (Edcon 4140RND.16, ordered 29 Oct 2026) | Edcon Steel | — | Purchased |
-| 5 | Collar blank | 1 | 4140/709M, 65 mm peeled round (Edcon 4140RND.65, ordered 29 Oct 2026) for the 52 OD, Ø64 flange, 60 high collar; only 0.5 mm per side to clean up the flange | Edcon Steel | — | Purchased |
+| 5 | Collar blank | 1 | 4140/709M, 65 mm peeled round (Edcon 4140RND.65, ordered 29 Oct 2026) for the 52 OD, Ø64 flange, 64 high collar (needs at least 70 of bar); only 0.5 mm per side to clean up the flange | Edcon Steel | — | Purchased |
 | 6 | Push pad and thrust washers | 1 bar | 4140 from bars already ordered: push pad Ø16 × 8 from the Ø16 drawbar offcut; two thrust washers 32 OD × 11.3 bore, 3 and 4 mm, from the Ø50 bar (or the Ø65 collar offcut); all hardened and tempered with the wedge and anvil | Edcon Steel (ordered bars) | — | Purchased |
-| 7 | Drawbar nuts | 2 + spares | 7/16-20 UNF heavy hex nut and jam nut, grade 8 | Fastener supplier | — | Committed |
-| 8 | Collar clamp screws | 6 + 2 spare | M8 × 25 socket head, grade 12.9 | Fastener supplier | — | Committed |
+| 7 | Drawbar nuts | 2 + spares | 7/16-20 UNF heavy hex nut and jam nut, grade 8 | Fastener supplier | — | Purchased |
+| 8 | Collar clamp screws | 6 + 2 spare | M8 × 25 socket head, grade 12.9 | Fastener supplier | — | Purchased |
 | 9 | Wedge and anvil stock | 1 | 4140/709M, 50 mm peeled round (Edcon 4140RND.50, ordered 29 Oct 2026): wedge 80 long, anvil 40 long, plus saw and facing allowance | Edcon Steel | — | Purchased |
 | 10 | Roof wear plate stock | 1 | O1 ground flat stock 40 × 5 × 500 (Edcon fgsfl.40.5.500, ordered 29 Oct 2026); wear plate finished 60 × 40 × 5; plus 4 × M3 × 18 cap screws | Edcon Steel | — | Purchased |
 | 11 | Rollers | 4 + 1 spare | Ø14 × 36 mm hardened, ground dowel pins, ISO 8734, 58–62 HRC (supplier spec) | Purchased | — | Purchased |
-| 12 | Roller cage and springs | 1 set | 2 cages from 2 mm brass sheet; 4 light compression springs Ø5 × 16 free (about 0.1 N/mm); 4 × Ø5 silver-steel cross pins with e-clips (Ø5 W1 silver steel ordered from Edcon, 2 × 1 m) | Engineering supplier | — | Committed |
+| 12 | Roller cage and springs | 1 set | 2 cages from 2 mm brass sheet; 4 light compression springs Ø5 × 16 free (about 0.1 N/mm); 4 × Ø5 silver-steel cross pins with e-clips (Ø5 W1 silver steel ordered from Edcon, 2 × 1 m) | Engineering supplier | Brass sheet still to buy; silver steel, springs and e-clips bought | Committed |
 | 13 | Floating joint | 1 | SMC JA40-14-150 floating joint, M14 × 1.5, rated 4,400 N tension/compression,&#32; plus an M14 × 1.5 × 40 grade 10.9 or 12.9 stud (or fine-thread bolt with the head cut off) into the rod; check the joint's overall length against the rod-to-wedge gap | Pneumatics supplier | — | Purchased |
-| 14 | Housing side plates | 2 | 12 mm 6061-T6, 130 × 189, a mirrored pair: fork window, collar notch, anvil lift pockets and all holes as the side plate drawing | Aluminium supplier | — | Proposed |
-| 15 | Roof block | 1 | 6061-T6, 19 × 60 × 42 mm finished (from 20 mm plate; 19 because the wear plate is 5 mm); 4 × Ø3.4 holes counterbored Ø6.5 × 3.5 for M3 × 18 | Steel supplier or offcut | — | Committed |
-| 16 | Cylinder mount plate | 1 | 12 mm 6061-T6, 100 × 100, Ø40 centre bore; 4 × M12 × 1.75 socket heads into the cylinder's front threads; 4 × M6 × 25 into the side plates' front edges; spacer tubes on the M12s if the JA joint needs more room | Steel supplier, fastener supplier | — | Proposed |
-| 17 | Fork plate | 1 | 16 mm mild steel, 92 × 66, slot 54 wide with an R27 end; slides through the side-plate windows under the collar flange and rests on the plates' feet; 4 × M6 × 30 up through the feet | Steel supplier | — | Proposed |
-| 18 | Anvil parts | 1 set | Rear thrust bar, 6061-T6 10 × 30 × 42, faced with a 3 × 25 × 40 bronze strip; 2 × Ø5 m6 × 10 dowel pins (ISO 8734) as lift pins, pressed into the reamed H7 holes; 2 light springs under them | Engineering supplier | — | Proposed |
-| 19 | Hard stop | 1 | M8 set screw and lock nut in a rear stop block (6061-T6 10 × 20 × 42) between the side plates | Fastener supplier | — | Proposed |
-| 20 | Float guides | 2 sets | 2 × Ø12 h6 ground rod 140 long (M8 × 11 spigot turned on one end); 2 lugs (6061-T6 40 × 24 × 20) with Ø12/Ø16 × 20 bronze bushes; 4 × Ø22 × 10 set-screw collars; 2 compression springs, about 13 ID × 20 free, about 3 N/mm, fitted at 12 long (about 24 N each) | Bearing or engineering supplier | — | Proposed |
-| 21 | Head-top base plate | 1 | 12 mm 6061-T6 replacing the belt cover: outline flush with the head top, R47 cut-out round the spindle opening into an 80 wide slot to the rear for the belt; 4 × M6 × 20 (8.8) into new holes tapped through the 9 mm casting top; 2 × Ø6 dowels; carries the two float guide pins (see the base plate drawing) | Steel supplier | Corner-hole positions and depth (sheet 9.9), 9.8, 9.10 | Proposed |
+| 14 | Housing side plates | 2 | 12 mm 6061-T6, 130 × 189, a mirrored pair: fork window, collar notch, anvil lift pockets and all holes as the side plate drawing | Aluminium supplier | — | Purchased |
+| 15 | Roof block | 1 | 6061-T6, 19 × 60 × 42 mm finished (from 20 mm plate; 19 because the wear plate is 5 mm); 4 × Ø3.4 holes counterbored Ø6.5 × 3.5 for M3 × 18 | Aluminium supplier (stock received 6 Nov 2026) | — | Purchased |
+| 16 | Cylinder mount plate | 1 | 12 mm 6061-T6, 100 × 100, Ø40 centre bore; 4 × M12 × 1.75 socket heads into the cylinder's front threads; 4 × M6 × 25 into the side plates' front edges; spacer tubes on the M12s if the JA joint needs more room | Aluminium supplier (12 × 160 bar), fastener supplier | — | Purchased |
+| 17 | Fork plate | 1 | 16 mm mild steel, 92 × 66, slot 54 wide with an R27 end; slides through the side-plate windows under the collar flange and rests on the plates' feet; 4 × M6 × 30 up through the feet | Steel supplier | — | Purchased |
+| 18 | Anvil parts | 1 set | Rear thrust bar, 6061-T6 10 × 30 × 42, faced with a 3 × 25 × 40 bronze strip; 2 × Ø5 m6 × 10 dowel pins (ISO 8734) as lift pins, pressed into the reamed H7 holes; 2 light springs under them | Engineering supplier | Bronze strip still to buy; bar stock, dowels and springs ordered 6 Nov 2026 | Committed |
+| 19 | Hard stop | 1 | M8 set screw and lock nut in a rear stop block (6061-T6 10 × 20 × 42) between the side plates | Fastener supplier | — | Purchased |
+| 20 | Float guides | 2 sets | 2 × Ø12 h6 ground rod 140 long (M8 × 11 spigot turned on one end); 2 lugs (6061-T6 40 × 24 × 20) with Ø12/Ø16 × 20 bronze bushes; 4 × Ø22 × 10 set-screw collars; 2 compression springs, about 13 ID × 20 free, about 3 N/mm, fitted at 12 long (about 24 N each) | Bearing or engineering supplier | Ø12 ground rod still to buy; lugs, bushes, collars and springs bought | Committed |
+| 21 | Head-top base plate | 1 | 12 mm 6061-T6 replacing the belt cover: outline flush with the head top, R47 cut-out round the spindle opening into an 80 wide slot to the rear for the belt; 4 × M6 × 20 (8.8) into new holes tapped through the 9 mm casting top; 2 × Ø6 dowels; carries the two float guide pins (see the base plate drawing) | Aluminium supplier (12 × 160 bar) | — | Purchased |
 | 22 | Filter-regulator | 1 | With gauge, 1/4" ports, set to 5.0 bar | Pneumatics supplier | — | Committed |
 | 23 | Solenoid valve | 1 | 5/2 single solenoid, spring return, 24 VDC | Pneumatics supplier | Ordered 6 Nov 2026 | Purchased |
 | 24 | Flow controls | 2 | Meter-out, push-in, 10 mm tube × R3/8, in place of the PC10-03 fittings | Pneumatics supplier | Port thread | Purchased |
@@ -796,7 +801,7 @@ DIN-rail terminals; \
 1N4007 diode |
 | Hardware store | 29 | MoS₂ grease, anti-seize, thread-locker |
 
-The floating joint (row 13) can be ordered as the SMC JA40-14-150, whose 4,400 N rating covers the load; confirm its length against the rod-to-wedge gap first. Hold off on the housing plates (rows 14, 16–19, 21) until the head measurements are in.
+The floating joint (row 13) can be ordered as the SMC JA40-14-150, whose 4,400 N rating covers the load; confirm its length against the rod-to-wedge gap first. The head measurements are in and the housing stock was bought on 6 Nov 2026.
 
 **Hardware list (wedge design).** Every screw, pin and small bought part in one place. Lengths are checked against the parts they pass through; grade 8.8 unless stated.
 
@@ -811,7 +816,7 @@ The floating joint (row 13) can be ordered as the SMC JA40-14-150, whose 4,400 N
 | Socket head cap screw | 4 | M6 × 25 | Mount plate to side-plate front edges | Ordered 6 Nov 2026 |
 | Socket head cap screw | 4 | M8 × 25 | Roof block to side plates | Ordered 6 Nov 2026 |
 | Dowel pin, ISO 8734 | 2 | Ø6 m6 × 20 | Roof block to side plates | Ordered 6 Nov 2026 |
-| Socket head cap screw | 4 | M3 × 18 | Wear plate up into roof block | Ordered 6 Nov 2026 |
+| Socket head cap screw | 4 | M3 × 18 | Roof block down into the wear plate | Ordered 6 Nov 2026 |
 | Socket head cap screw | 8 | M5 × 20 | Thrust bar and stop block ends | Ordered 6 Nov 2026 |
 | Countersunk screw | 2 | M3 × 8 | Bronze strip to thrust bar | Ordered 6 Nov 2026 |
 | Hex set screw and nut | 1 + 1 | M8 × 30, full thread | Hard stop | Ordered 6 Nov 2026 |
@@ -833,9 +838,9 @@ The floating joint (row 13) can be ordered as the SMC JA40-14-150, whose 4,400 N
 
 The release stroke is the critical input; most other dimensions follow from it.
 
-- [ ] Release stroke s\_r: section 5 test with the new 3/4" collet and the existing 7/16-20 drawbar at 15–20 Nm
+- [ ] Release stroke s\_r: section 5 test with the new 3/4" collet and a temporary M12 × 1.75 drawbar (grade 8.8 threaded rod, nut and a thick washer on the spindle end face) at about 20 Nm dry or 15 Nm oiled
 - [ ] Collet thread length and engagement (rows 3.5–3.7)
-- [ ] Grind the new collet nose so clamped stick-out is 1.5 mm or less, at least 0.5 mm under the 2.0 mm holder rebate; measure stick-out at design preload before grinding (the sample collet would need about 2.3 mm removed)
+- [ ] Measure the flat-nose collet's clamped stick-out at design preload: it must be 1.5 mm or less, at least 0.5 mm under the 2.0 mm holder rebate; grind only if it isn't
 - [ ] Taper break effort: first estimate of push-out force P
 - [ ] Spline profile: crest width, root diameter, hardness (file test) for the cap clamp
 - [ ] Air supply: 90 psi at 9 CFM confirmed; still need compressor cut-in pressure and fittings at the mill
@@ -848,8 +853,14 @@ The release stroke is the critical input; most other dimensions follow from it.
 - [ ] Measure the JA40-14-150 fitted to the rod, cylinder retracted: from the cylinder front face to the face of the JA's stud nut. Up to 30 mm fits as drawn; anything over 30 mm is the length of the spacer tubes behind the cylinder
 - [ ] Cylinder rod side play (sheet 7.13), for information
 - [ ] Quick check: the cylinder's rod boss is under Ø38, so it clears the mount plate's Ø40 bore (only matters if no spacers are needed)
-- [ ] Lengths of the Ø16 and Ø65 bars as delivered, against the cutting list (the Ø50 is 150, which is enough)
+- [ ] Lengths of the Ø16 and Ø65 bars as delivered, against the cutting list: the Ø65 needs at least 70 for the 64 mm collar (84 if the thrust washers come from it); the Ø50 is 150, which is enough
 - [ ] Head weight W for the gas strut: Z coupling undone, luggage scale, average of the just-rising and just-falling readings; then the strut's column and head bracket positions
+- [ ] Alloy of the 12 × 160 flat bar as supplied (6061-T6 or 6060-T5); if 6060, fit Helicoils or use 2 × d engagement in its tapped holes
+- [ ] Still to buy: Ø12 h6 ground rod (at least 300), bronze strip 3 × 25 × 40, 2 mm brass sheet about 100 × 50, filter-regulator
+- [ ] Make a temporary M12 × 1.75 test drawbar (grade 8.8 threaded rod about 300 long, nut, thick washer) for the release-stroke test
+- [ ] Choose K1 and K2T once the Acorn spare I/O and the spindle-on signal are confirmed (sheet 9.13)
+- [ ] Design the gas strut brackets on the column and head once W is measured
+- [ ] Settle the valve and regulator mounting positions (see Air lines and valve)
 
 ## Appendix A – Washer suppliers
 
@@ -1005,7 +1016,7 @@ All of these are a small fraction of what 6061-T6 or mild steel takes, so there 
 | # | Item | Qty | Specification | Source | Waiting on | Status |
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Air cylinder | 1 | SDA 80 × 25 compact, double-acting (owned; the SDA 80 × 30 from AliExpress is a spare) | Owned | — | Purchased |
-| 2 | R8 collet, 3/4" | as ordered | TTS-style, 7/16-20 UNF; grind nose to ≤1.5 mm stick-out | Ordered | Arrival | Purchased |
+| 2 | R8 collet, 3/4" | as ordered | Flat-nose 3/4" TTS R8, M12 × 1.75 (received 7 Nov 2026); check clamped stick-out is ≤1.5 mm | Ordered | Arrival | Purchased |
 | 3 | Belleville washers | 2 sets (16) | Genuine Tormach 31319 (30.2 × 11.4 × 2.3 mm), sold in sets of 8: one set for the stack, one spare set | Tormach (US$4.95 each, US$79 for 16) | Quote from AU Tormach Distributor | Committed |
 | 4 | Drawbar bar | 1 m | 4140 condition T, 16 mm round | Collier & Miller, The Metal Warehouse, Russell Steel | — | Committed |
 | 5 | Collar blank | 1 | 4140 condition T, 66 mm round × 70 mm (52 OD, 64 flange, 60 high) | Russell Steel, or a club offcut | — | Committed |

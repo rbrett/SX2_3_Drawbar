@@ -53,7 +53,7 @@ Sketch of the head top, spindle centre marked, hole positions dimensioned:
 
 ## 3. Existing drawbar
 
-The new drawbar will be 7/16-20 UNF to suit the 3/4" TTS collet. The existing M12 drawbar is a length reference only.
+The new drawbar will be M12 × 1.75 at the collet end, to suit the flat-nose 3/4" TTS collet that arrived on 7 Nov 2026 (it was planned as 7/16-20). The existing 7/16-20 drawbar is a length reference only.
 
 | # | Measurement | Value |
 | --- | --- | --- |
@@ -62,13 +62,13 @@ The new drawbar will be 7/16-20 UNF to suit the 3/4" TTS collet. The existing M1
 | 3.3 | Body diameter (mm) | 11.5mm |
 | 3.4 | Head: hex across flats, height; washer OD and thickness (mm) | It's a 10mm allen key head currently, 17.7mm round, and 15mm tall, including an insert washer to centre the drawbar in the spindle. All measurements above include this washer as part of the drawerbar. |
 | 3.5 | With a TTS holder clamped: spindle end face to underside of drawbar head (mm) | Unable to measure until new 3/4 collet arrives |
-| 3.6 | New 3/4" collet with a 7/16-20 drawbar: turns from first catch to clamped | Unable to measure until new 3/4 collet arrives. |
+| 3.6 | New 3/4" collet with an M12 × 1.75 drawbar: turns from first catch to clamped | Unable to measure until new 3/4 collet arrives. |
 | 3.7 | Thread length inside the new 3/4" collet (depth gauge) (mm) | Unable to measure until new 3/4 collet arrives. |
 | 3.8 | Tightening torque normally used, if known (Nm) | Unknown, will be different for new collet? |
 
 ## 4. Collet and TTS holder fit
 
-Do this section with the new 3/4" collet (7/16-20 UNF), not the 19 mm collet. It confirms the holders seat on the spindle nose, not the collet face.
+Do this section with the new flat-nose 3/4" collet (M12 × 1.75), not the 19 mm collet. It confirms the holders seat on the spindle nose, not the collet face.
 
 | # | Measurement | Value |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ Do this section with the new 3/4" collet (7/16-20 UNF), not the 19 mm collet. It
 
 ## 5. Release-stroke test
 
-This gives the stroke the actuator must deliver at the drawbar. Use the new 3/4" collet with your existing 7/16-20 drawbar, clamped at 15–20 Nm to approximate the 8.2 kN design preload. Each quarter turn of a 7/16-20 thread (1.27 mm pitch) lets the collet drop 0.32 mm, so stroke = turns × 1.27 mm. Measure collet protrusion directly as a cross-check.
+This gives the stroke the actuator must deliver at the drawbar. The existing 7/16-20 drawbar no longer fits the new collet, so use a temporary M12 × 1.75 drawbar: grade 8.8 threaded rod about 300 long, with a nut and a thick washer bearing on the spindle end face. Tighten it to about 20 Nm dry or 15 Nm oiled to approximate the 8.2 kN design preload (T ≈ K × F × d with K about 0.2 dry, 0.15 oiled: 0.2 × 8.2 kN × 12 mm = 19.7 Nm; the K values are typical figures, from memory). Each quarter turn of the M12 × 1.75 thread lets the collet drop 0.44 mm, so stroke = turns × 1.75 mm. Measure collet protrusion directly as a cross-check.
 
 1. Quill fully up. Lay a rag on the table.
 2. Clamp a TTS holder at your normal drawbar torque. Record the collet protrusion at the clamped position (row 0).
@@ -98,15 +98,15 @@ This gives the stroke the actuator must deliver at the drawbar. Use the new 3/4"
 | Turns loosened | Calculated travel (mm) | Collet protrusion (mm) | Holder drops? (Y/N) | Inserts freely? (Y/N) |
 | --- | --- | --- | --- | --- |
 | 0 (clamped) | 0 |  |  |  |
-| 1/4 | 0.32 |  |  |  |
-| 1/2 | 0.64 |  |  |  |
-| 3/4 | 0.95 |  |  |  |
-| 1 | 1.27 |  |  |  |
-| 1 1/4 | 1.59 |  |  |  |
-| 1 1/2 | 1.91 |  |  |  |
-| 2 | 2.54 |  |  |  |
-| 2 1/2 | 3.18 |  |  |  |
-| 3 | 3.81 |  |  |  |
+| 1/4 | 0.44 |  |  |  |
+| 1/2 | 0.88 |  |  |  |
+| 3/4 | 1.31 |  |  |  |
+| 1 | 1.75 |  |  |  |
+| 1 1/4 | 2.19 |  |  |  |
+| 1 1/2 | 2.63 |  |  |  |
+| 2 | 3.50 |  |  |  |
+| 2 1/2 | 4.38 |  |  |  |
+| 3 | 5.25 |  |  |  |
 
 Taper break effort (light / firm / hard):
 
@@ -133,7 +133,7 @@ Photos, each with a steel rule in shot:
 - [ ] Head-top mounting holes
 - [ ] Controller board / terminal area (for the interlock)
 
-## 7. Cylinder (SDA 80 × 30)
+## 7. Cylinder (SDA 80 × 25)
 
 These set the clevis plates and the yoke top plate height.
 
@@ -147,7 +147,7 @@ These set the clevis plates and the yoke top plate height.
 | 7.6 | Front face: tapped holes and pitch, as 7.3–7.4 | M12, 28mm deep, no thread first 14mm |
 | 7.7 | Rod diameter (mm) | 25.00mm |
 | 7.8 | Rod protrusion beyond the front face, retracted (mm) | The boss that holds the rod protrudes 70.9mm from the rear face, and the rod itself protrudes 78.41mm from the rear face. |
-| 7.9 | Rod end thread: male or female, size and pitch, usable length (mm) | Female, M12, 32mm of thread. |
+| 7.9 | Rod end thread: male or female, size and pitch, usable length (mm) | Female, M14 × 1.5 (re-measured 29 Oct; first recorded as M12), 32mm of thread. |
 | 7.10 | Measured stroke, retracted to extended (mm) | Assumed 25mm, as per model. |
 | 7.11 | Port thread size; which face; distance from each end (mm) | Top face, central, PC10-03 fittings fitted, to use 10mm hosing. |
 | 7.12 | Magnetic piston? (S on the label, or a steel rule sticks to the body near the piston) | No magnetic piston. |

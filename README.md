@@ -14,6 +14,8 @@ A Belleville stack on a 7/16-20 drawbar holds the TTS holder. To release, an SDA
 ## Key numbers
 | Item | Value |
 |---|---|
+| Drawbar | 4140, M12 × 1.75 to the flat-nose collet (changed 7 Nov 2026), 7/16-20 top thread; 8.2 kN preload set by stack height |
+| Collar | Two-piece 4140 clamp, Ø52 × 64, clamp screws at Z −25.5/−37.5/−49.5 to clear the 16 mm fork |
 | Wedge | 4140, ~50 HRC, 80 × 40, 23.5 → 10.11, 9.5° |
 | Rollers | Ø14 × 36 hardened dowels |
 | Cylinder | LAIZE SDA 80×25, rod M14×1.5 female, 0.15–0.8 MPa |
@@ -24,7 +26,7 @@ A Belleville stack on a 7/16-20 drawbar holds the TTS holder. To release, an SDA
 ## Layout
 | Path | Contents |
 |---|---|
-| `docs/` | Printable design (docx + PDF, 29 Oct), `design-doc.md` (full live design doc), `measurement-sheet.md` |
+| `docs/` | Printable design (docx + PDF, 7 Nov 2026), `design-doc.md` (full live design doc), `measurement-sheet.md` |
 | `calculator/` | `PDB_design_calculator.xlsx`, washer-stack comparison, `calc.py` / `build.py` that generate them |
 | `drawings/doc-media/` | Drawings and formula images used in the printed doc |
 | `drawings/widgets/` | Renders of every diagram produced during the chat (chronological by file name) |
