@@ -21,7 +21,7 @@ PARTS = []
 # 1. Side plate ------------------------------------------------------------
 PARTS.append(dict(
     slug='side-plate', title='Side plate (2 off, mirrored pair)',
-    sub='12 mm 6061-T6 (or 5083-H116). View from the machine\'s left, front to the right; 0,0 = rear bottom corner (X −65, Z −37).',
+    sub='12 mm 6060 (from the 12 × 160 bar). View from the machine\'s left, front to the right; 0,0 = rear bottom corner (X −65, Z −37).',
     views=[
         dict(name='Face', w=130, h=189,
              outline=[('M', 0, 0), ('L', 39, 0), ('L', 39, 20), ('L', 19, 20), ('L', 19, 36.2), ('L', 39, 36.2),
@@ -66,7 +66,7 @@ PARTS.append(dict(
 yarc = 60 + math.sqrt(47 ** 2 - 40 ** 2)
 PARTS.append(dict(
     slug='base-plate', title='Head-top base plate (1 off)',
-    sub='12 mm 6061-T6. Plan from above, front at the bottom; 0,0 = front-left corner. Spindle axis at (57.5, 60).',
+    sub='12 mm 6060 (from the 12 × 160 bar). Plan from above, front at the bottom; 0,0 = front-left corner. Spindle axis at (57.5, 60).',
     views=[dict(name='Plan', w=115, h=107,
                 outline=[('M', 0, 7), ('L', 7, 0), ('L', 108, 0), ('L', 115, 7), ('L', 115, 107), ('L', 97.5, 107),
                          ('L', 97.5, yarc), ('A', 47, 1, 1, 17.5, yarc), ('L', 17.5, 107), ('L', 0, 107), ('Z',)],
@@ -86,7 +86,7 @@ PARTS.append(dict(
 c = 50 - 74.07 / 2
 PARTS.append(dict(
     slug='mount-plate', title='Cylinder mount plate (1 off)',
-    sub='12 mm 6061-T6. Either face (symmetric); 0,0 = lower-left corner. Centre (50, 50) on the cylinder axis, Z 102.',
+    sub='12 mm 6060 (from the 12 × 160 bar). Either face (symmetric); 0,0 = lower-left corner. Centre (50, 50) on the cylinder axis, Z 102.',
     views=[dict(name='Face', w=100, h=100, outline=rect(100, 100),
                 xs=[0, 12.97, 23, 50, 77, 87.03, 100], ys=[0, 12.97, 35, 50, 65, 87.03, 100],
                 holes=[('L1', c, c, 13, 'Ø13', 'thru', 'thru'), ('L2', 100 - c, c, 13, 'Ø13', 'thru', 'thru'),
