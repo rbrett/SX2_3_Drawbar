@@ -20,13 +20,15 @@ A Belleville stack on a 7/16-20 drawbar holds the TTS holder. To release, an SDA
 | Rollers | Ø14 × 36 hardened dowels |
 | Cylinder | LAIZE SDA 80×25, rod M14×1.5 female, 0.15–0.8 MPa |
 | Floating joint | SMC JA40-14-150 (4.4 kN, ±0.75 mm, ±5°) |
-| Frame | 6061-T6 12 mm plates; fork 16 mm mild steel |
+| Frame | 6060 12 mm plates (12 × 160 bar); fork 16 mm mild steel |
 | Added mass | ≈ 6.4 kg (floating part ≈ 4.9 kg) — gas strut ≥ 250 mm stroke |
 
 ## Layout
 | Path | Contents |
 |---|---|
 | `docs/` | Printable design (docx + PDF, 7 Nov 2026), `design-doc.md` (full live design doc), `measurement-sheet.md` |
+| `manual/` | Build manual (printed docx + PDF, 14 Nov 2026), `build-manual.md`, `gcode_gen.py` (G-code generator), `backplot.py`, `build_print_manual.py`, `img/` |
+| `gcode/` | Centroid Acorn programs O1101–O2202 (G21, G54, lower-left zero, 5000 rpm cap) and `index.json` (setups, tools, tool-centre spans) |
 | `calculator/` | `PDB_design_calculator.xlsx`, washer-stack comparison, `calc.py` / `build.py` that generate them |
 | `drawings/doc-media/` | Drawings and formula images used in the printed doc |
 | `drawings/widgets/` | Renders of every diagram produced during the chat (chronological by file name) |

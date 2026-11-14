@@ -42,7 +42,7 @@ PARTS.append(dict(
         dict(name='Bottom edge', w=130, h=12, outline=rect(130, 12), xs=[29, 101], ys=[6], below=True,
              holes=[('J1', 29, 6, 6.6, 'Ø6.6', 'thru the 20 foot', 'thru'), ('J2', 101, 6, 6.6, 'Ø6.6', 'thru the 20 foot', 'thru')]),
     ],
-    notes=['Window 92 × 16.2 (x 19–111, y 20–36.2) takes the fork; slot 52 wide (x 39–91) open to y 45. Inside corners R2.',
+    notes=['Window 92 × 16.2 (x 19–111, y 20–36.2) takes the fork; slot 52 wide (x 39–91) open to y 45. Inside corners R3 (6 mm cutter).',
            'G1: anvil lift pocket 7 × 9 × 3.5 deep, inner face only. G2: Ø6 × 10 spring pocket below it, on the pocket centre line.',
            'Machine both plates stacked; coordinates are the same for both in this view. Pockets go on the two inner faces.',
            'Edge views: x across the 12 thickness (H, J at mid-thickness 6). H in the front edge (x 130 on the face view), J up through each foot.']))
@@ -60,7 +60,8 @@ PARTS.append(dict(
                        ('K3', 10, 60, 6, 'M6 (drill Ø5.0)', '12 deep from below', 'tap'),
                        ('K4', 82, 60, 6, 'M6 (drill Ø5.0)', '12 deep from below', 'tap')])],
     notes=['Slot 54 +0.2/0 wide (x 19–73), open at y 0, closed end R27 centred at (46, 33).',
-           'Top face flat (fly-cut): it bears on the collar flange. Break the slot edges 0.5.']))
+           'Top face flat (fly-cut): it bears on the collar flange. Break the slot edges 0.5.',
+           'Chamfer the four 16 mm end edges 2 × 45°: the fork ends sit in the window corners, which are R3.']))
 
 # 3. Base plate ------------------------------------------------------------
 yarc = 60 + math.sqrt(47 ** 2 - 40 ** 2)
@@ -165,6 +166,30 @@ PARTS.append(dict(
                 holes=[], rects=[(9.85, 2.2, 24.15, 38.8, 'Z1 window'), (27.85, 2.2, 42.15, 38.8, 'Z2 window')], solidrects=True)],
     notes=['Windows 14.3 × 36.6, centres (17, 20.5) and (35, 20.5), 18 pitch; rollers Ø14 × 36 with 0.3 / 0.6 play.',
            'Tongues 6 × 3 each side carry the centring springs. Break all window edges.']))
+
+
+# 11. Wedge ---------------------------------------------------------------
+import math as _m
+_sl = _m.tan(_m.radians(9.5))
+PARTS.append(dict(
+    slug='wedge', title='Wedge (1 off) – finished sizes',
+    sub='4140, hardened about 50 HRC and ground. 0,0 = lower-left of each view. Machine with 0.3 per ground face (see the offset table).',
+    views=[dict(name='Side view', w=80, h=23.5, outline=[('M', 0, 23.5 - 10.11), ('L', 80, 0), ('L', 80, 23.5), ('L', 0, 23.5), ('Z',)],
+                xs=[0, 80], ys=[0, 13.39, 23.5], holes=[], hidden=[(66, 11.75 - 6.25, 80, 11.75 - 6.25), (66, 11.75 + 6.25, 80, 11.75 + 6.25), (62, 11.75 - 4, 62, 11.75 + 4)]),
+           dict(name='Trailing end', w=40, h=23.5, outline=rect(40, 23.5), xs=[0, 20, 40], ys=[0, 11.75, 23.5], below=True,
+                holes=[('WE1', 20, 11.75, 14, 'M14 × 1.5 (drill Ø12.5 × 18)', '14 full thread', 'tap')])],
+    notes=['Leading (thin) end 10.11 at x 0; trailing end 23.50 at x 80; underside at 9.5° ±0.05°, top flat.',
+           'Width 40 −0.1/−0.2 after grinding. Tap before hardening; the JA nut bears on the trailing end face.']))
+
+# 12. Anvil ---------------------------------------------------------------
+PARTS.append(dict(
+    slug='anvil', title='Anvil (1 off) – finished sizes',
+    sub='4140, hardened about 50 HRC and ground. 0,0 = lower-left of the side view, thrust (rear) face at x 0.',
+    views=[dict(name='Side view (both sides)', w=40, h=22.7, outline=[('M', 0, 0), ('L', 40, 0), ('L', 40, 16.0), ('L', 0, 22.7), ('Z',)],
+                xs=[0, 20, 40], ys=[0, 8, 16, 22.7],
+                holes=[('AN1', 20, 8, 5, 'Ø5 H7 (drill 4.8, ream)', '6 deep, each side face', 'blind')])],
+    notes=['Top at 9.5°, ground in the same sine-bar setting as the wedge underside. Width 40 −0.1/−0.2.',
+           'Press a Ø5 m6 × 10 dowel into each hole after hardening, 4 mm proud.']))
 
 # ---------------------------------------------------------------- rendering
 

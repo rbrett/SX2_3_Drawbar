@@ -1,0 +1,388 @@
+{
+ "progs": [
+  {
+   "num": 1101,
+   "name": "side plate holes, stacked pair",
+   "part": "Side plates (2), 12 mm 6060",
+   "file": "O1101_side_plate_holes_stacked_pair.nc",
+   "tools": [
+    1,
+    20,
+    16,
+    14,
+    15,
+    13
+   ],
+   "setup": "Both blanks finished to 130 x 189, screwed back to back through the window area, clamped flat on a sacrificial plate; outer face of the LEFT plate up, front edge to +X",
+   "z0": "top face of the stack",
+   "xmin": 8,
+   "xmax": 117,
+   "ymin": 51,
+   "ymax": 179.9,
+   "mat": "al"
+  },
+  {
+   "num": 1102,
+   "name": "side plate window and notch",
+   "part": "Side plate, each, 12 mm 6060",
+   "file": "O1102_side_plate_window_and_notch.nc",
+   "tools": [
+    2
+   ],
+   "setup": "One plate at a time on a sacrificial plate, outer face up, front edge to +X; rough out the notch and window with a saw first, 2 mm inside the lines",
+   "z0": "top face of the plate",
+   "xmin": 22,
+   "xmax": 108,
+   "ymin": -6,
+   "ymax": 42,
+   "mat": "al"
+  },
+  {
+   "num": 1103,
+   "name": "side plate lift and spring pockets",
+   "part": "Side plate, each, inner face",
+   "file": "O1103_side_plate_lift_and_spring_pockets.nc",
+   "tools": [
+    2
+   ],
+   "setup": "Plate inner face up (same program for both: the pocket is on the centreline x 65), front edge to +X for the LEFT plate, to -X for the RIGHT plate; X0 Y0 at the lower-left corner as clamped",
+   "z0": "inner face",
+   "xmin": 64.5,
+   "xmax": 65.5,
+   "ymin": 95.9,
+   "ymax": 108.9,
+   "mat": "al"
+  },
+  {
+   "num": 1201,
+   "name": "fork plate",
+   "part": "Fork plate, 16 mm mild steel",
+   "file": "O1201_fork_plate.nc",
+   "tools": [
+    1,
+    13,
+    3
+   ],
+   "setup": "Blank 92 x 66 x 16 (edges and faces already milled), bottom face up for the holes, then top face up for the slot; slot open end toward -Y; rough the slot with a saw first",
+   "z0": "face as clamped",
+   "xmin": 10,
+   "xmax": 82,
+   "ymin": -6,
+   "ymax": 60,
+   "mat": "steel"
+  },
+  {
+   "num": 1301,
+   "name": "head-top base plate",
+   "part": "Base plate, 12 mm 6060",
+   "file": "O1301_head-top_base_plate.nc",
+   "tools": [
+    1,
+    17,
+    18,
+    16,
+    3
+   ],
+   "setup": "Blank finished to 115 x 107 x 12, front edge toward -Y, on a sacrificial plate; saw out the R47 cut-out and slot to 3 mm inside the line first",
+   "z0": "top face",
+   "xmin": -6,
+   "xmax": 121,
+   "ymin": -6,
+   "ymax": 113,
+   "mat": "al"
+  },
+  {
+   "num": 1401,
+   "name": "cylinder mount plate",
+   "part": "Mount plate, 12 mm 6060",
+   "file": "O1401_cylinder_mount_plate.nc",
+   "tools": [
+    1,
+    17,
+    18,
+    3
+   ],
+   "setup": "Blank finished to 100 x 100 x 12 on a sacrificial plate. Better: spot the L holes from the cylinder itself (see manual) and skip the L section",
+   "z0": "top face",
+   "xmin": 11.465000000000003,
+   "xmax": 88.535,
+   "ymin": 11.465000000000003,
+   "ymax": 88.535,
+   "mat": "al"
+  },
+  {
+   "num": 1501,
+   "name": "roof block top face",
+   "part": "Roof block, 6061-T6, 60 x 42 x 19",
+   "file": "O1501_roof_block_top_face.nc",
+   "tools": [
+    1,
+    11,
+    2
+   ],
+   "setup": "Block finished to 60 x 42 x 19, top face up, 60 along X",
+   "z0": "top face",
+   "xmin": 4.75,
+   "xmax": 55.25,
+   "ymin": 6.75,
+   "ymax": 35.25,
+   "mat": "al"
+  },
+  {
+   "num": 1502,
+   "name": "roof block side face",
+   "part": "Roof block, each 60 x 19 side face",
+   "file": "O1502_roof_block_side_face.nc",
+   "tools": [
+    1,
+    18,
+    16
+   ],
+   "setup": "Block on its side, one 60 x 19 face up, 60 along X, Y0 at the BOTTOM (wear-plate) face; run once for each side face",
+   "z0": "side face as clamped",
+   "xmin": 15,
+   "xmax": 45,
+   "ymin": 10,
+   "ymax": 10,
+   "mat": "al"
+  },
+  {
+   "num": 1601,
+   "name": "roof wear plate",
+   "part": "Wear plate, O1 60 x 40 x 5 (annealed, before hardening)",
+   "file": "O1601_roof_wear_plate.nc",
+   "tools": [
+    1,
+    10
+   ],
+   "setup": "Plate on parallels, top (non-rolling) face up, 60 along X",
+   "z0": "top face",
+   "xmin": 5,
+   "xmax": 55,
+   "ymin": 6,
+   "ymax": 34,
+   "mat": "steel"
+  },
+  {
+   "num": 1701,
+   "name": "thrust bar anvil face",
+   "part": "Rear thrust bar, 6061-T6 42 x 30 x 10",
+   "file": "O1701_thrust_bar_anvil_face.nc",
+   "tools": [
+    1,
+    10
+   ],
+   "setup": "Anvil face up, 42 along X",
+   "z0": "anvil face",
+   "xmin": 6,
+   "xmax": 36,
+   "ymin": 15,
+   "ymax": 15,
+   "mat": "al"
+  },
+  {
+   "num": 1702,
+   "name": "thrust bar end",
+   "part": "Rear thrust bar, each 10 x 30 end",
+   "file": "O1702_thrust_bar_end.nc",
+   "tools": [
+    1,
+    12
+   ],
+   "setup": "Bar on end in the vise, 30 along Y, 10 along X; run for each end",
+   "z0": "end face",
+   "xmin": 5,
+   "xmax": 5,
+   "ymin": 6,
+   "ymax": 24,
+   "mat": "al"
+  },
+  {
+   "num": 1703,
+   "name": "bronze strip",
+   "part": "Bronze strip 40 x 25 x 3",
+   "file": "O1703_bronze_strip.nc",
+   "tools": [
+    1,
+    11
+   ],
+   "setup": "Strip taped to a sacrificial plate, 40 along X",
+   "z0": "top face",
+   "xmin": 5,
+   "xmax": 35,
+   "ymin": 12.5,
+   "ymax": 12.5,
+   "mat": "brass"
+  },
+  {
+   "num": 1801,
+   "name": "stop block",
+   "part": "Rear stop block, 6061-T6 42 x 20 x 10",
+   "file": "O1801_stop_block.nc",
+   "tools": [
+    1,
+    18
+   ],
+   "setup": "Wedge face up, 42 along X",
+   "z0": "wedge face",
+   "xmin": 21,
+   "xmax": 21,
+   "ymin": 10,
+   "ymax": 10,
+   "mat": "al"
+  },
+  {
+   "num": 1802,
+   "name": "stop block end",
+   "part": "Rear stop block, each 10 x 20 end",
+   "file": "O1802_stop_block_end.nc",
+   "tools": [
+    1,
+    12
+   ],
+   "setup": "Block on end, 20 along Y, 10 along X; run for each end",
+   "z0": "end face",
+   "xmin": 5,
+   "xmax": 5,
+   "ymin": 5,
+   "ymax": 15,
+   "mat": "al"
+  },
+  {
+   "num": 1901,
+   "name": "float lug bore",
+   "part": "Float lug, each, 40 x 24 x 20, top face",
+   "file": "O1901_float_lug_bore.nc",
+   "tools": [
+    1,
+    18,
+    3
+   ],
+   "setup": "Top (40 x 24) face up, 40 along X, mounting face toward -Y (Y0 on the mounting face)",
+   "z0": "top face",
+   "xmin": 17.1,
+   "xmax": 22.9,
+   "ymin": 11.1,
+   "ymax": 16.9,
+   "mat": "al"
+  },
+  {
+   "num": 1902,
+   "name": "float lug mounting holes",
+   "part": "Float lug, each, mounting face",
+   "file": "O1902_float_lug_mounting_holes.nc",
+   "tools": [
+    1,
+    19
+   ],
+   "setup": "Mounting (40 x 20) face up, 40 along X",
+   "z0": "mounting face",
+   "xmin": 6,
+   "xmax": 34,
+   "ymin": 10,
+   "ymax": 10,
+   "mat": "al"
+  },
+  {
+   "num": 2001,
+   "name": "roller cage",
+   "part": "Roller cage, each, 2 mm brass",
+   "file": "O2001_roller_cage.nc",
+   "tools": [
+    2
+   ],
+   "setup": "Brass blank 56 x 45 taped to a sacrificial plate; X0 Y0 at the lower-left of the 52 x 41 outline (blank overhangs 2 mm each side)",
+   "z0": "top face",
+   "xmin": -3,
+   "xmax": 55,
+   "ymin": -3,
+   "ymax": 44,
+   "mat": "brass"
+  },
+  {
+   "num": 2101,
+   "name": "wedge underside slope",
+   "part": "Wedge, 4140, before hardening",
+   "file": "O2101_wedge_underside_slope.nc",
+   "tools": [
+    3
+   ],
+   "setup": "Blank milled to 80.0 x 40.6 x 24.1 (top already flat), TOP face down on parallels, 80 along X with the THIN (leading) end at X0, 40.6 along Y; saw off the bulk first, 1.5 above the line",
+   "z0": "top of the blank as clamped (24.1 above the parallels)",
+   "xmin": -5.0,
+   "xmax": 85.0,
+   "ymin": -7,
+   "ymax": 47.6,
+   "mat": "steel"
+  },
+  {
+   "num": 2102,
+   "name": "wedge trailing end hole",
+   "part": "Wedge, 4140, trailing end face",
+   "file": "O2102_wedge_trailing_end_hole.nc",
+   "tools": [
+    1,
+    18,
+    21
+   ],
+   "setup": "Wedge standing on its trailing end, 40.6 along X, as-milled TOP face toward +Y; X0 Y0 at the lower-left corner of the end face as seen from above (Y0 on the slope side)",
+   "z0": "trailing end face",
+   "xmin": 20.3,
+   "xmax": 20.3,
+   "ymin": 12.05,
+   "ymax": 12.05,
+   "mat": "steel"
+  },
+  {
+   "num": 2201,
+   "name": "anvil top slope",
+   "part": "Anvil, 4140, before hardening",
+   "file": "O2201_anvil_top_slope.nc",
+   "tools": [
+    3
+   ],
+   "setup": "Blank squared to 40.0 x 40.6 x 23.3, underside down, 40 along X with the THRUST (rear, tall) end at X0",
+   "z0": "top of the blank (23.3 above the parallels)",
+   "xmin": -5.0,
+   "xmax": 45.0,
+   "ymin": -7,
+   "ymax": 47.6,
+   "mat": "steel"
+  },
+  {
+   "num": 2202,
+   "name": "anvil lift pin holes",
+   "part": "Anvil, 4140, each side face",
+   "file": "O2202_anvil_lift_pin_holes.nc",
+   "tools": [
+    1,
+    22
+   ],
+   "setup": "Anvil on its side, a 40 x 23.3 side face up, thrust face at X0, as-milled underside at Y0; run for each side",
+   "z0": "side face",
+   "xmin": 20.0,
+   "xmax": 20.0,
+   "ymin": 8.3,
+   "ymax": 8.3,
+   "mat": "steel"
+  }
+ ],
+ "tools": {
+  "1": "Spot drill 90 deg (6 mm or larger)",
+  "2": "6 mm carbide end mill, 2 or 3 flute",
+  "3": "10 mm carbide end mill, 2 or 3 flute",
+  "10": "Jobber drill 2.5 mm",
+  "11": "Jobber drill 3.4 mm",
+  "12": "Jobber drill 4.2 mm",
+  "13": "Jobber drill 5.0 mm",
+  "14": "Jobber drill 5.1 mm",
+  "15": "Jobber drill 5.5 mm",
+  "16": "Jobber drill 5.8 mm",
+  "17": "Jobber drill 6.6 mm",
+  "18": "Jobber drill 6.8 mm",
+  "19": "Jobber drill 7.0 mm",
+  "20": "Jobber drill 8.5 mm",
+  "21": "Jobber drill 12.5 mm",
+  "22": "Jobber drill 4.8 mm"
+ }
+}
