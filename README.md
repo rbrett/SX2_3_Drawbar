@@ -2,6 +2,8 @@
 
 A floating-housing, wedge-actuated Belleville-washer power drawbar for a CNC-converted Sieg SX2.3 (R8 spindle, TTS tooling, Centroid Acorn). Designed in a Claude chat, 25–30 Oct 2026.
 
+![Axonometric view of the assembled drawbar](drawings/axonometric/drawbar-axonometric.png)
+
 ## Design in one paragraph
 A Belleville stack on a 7/16-20 drawbar holds the TTS holder. To release, an SDA 80×25 cylinder drives a 9.5° wedge (i ≈ 5.98) through Ø14 rollers onto an anvil that pushes the drawbar down. The cylinder, wedge and anvil sit in a **floating** aluminium housing whose fork reacts against a collar clamped to the spindle, so the release force closes inside the spindle and **puts no load on the spindle bearings**. The housing floats on two Ø12 h6 guide pins in bronze bushes on a 12 mm 6061 base plate screwed to the head top. Acorn logic inhibits spindle start while released and vice versa.
 
@@ -26,10 +28,11 @@ A Belleville stack on a 7/16-20 drawbar holds the TTS holder. To release, an SDA
 ## Layout
 | Path | Contents |
 |---|---|
-| `docs/` | Printable design (docx + PDF, 7 Nov 2026), `design-doc.md` (full live design doc), `measurement-sheet.md` |
+| `docs/` | Printable design (docx + PDF, 14 Nov 2026), `design-doc.md` (full live design doc), `measurement-sheet.md` |
 | `manual/` | Build manual (printed docx + PDF, 14 Nov 2026), `build-manual.md`, `gcode_gen.py` (G-code generator), `backplot.py`, `build_print_manual.py`, `img/` |
 | `gcode/` | Centroid Acorn programs O1101–O2202 (G21, G54, lower-left zero, 5000 rpm cap) and `index.json` (setups, tools, tool-centre spans) |
 | `calculator/` | `PDB_design_calculator.xlsx`, washer-stack comparison, `calc.py` / `build.py` that generate them |
+| `drawings/axonometric/` | Axonometric view of the assembly (PNG) and the three.js source that renders it |
 | `drawings/doc-media/` | Drawings and formula images used in the printed doc |
 | `drawings/widgets/` | Renders of every diagram produced during the chat (chronological by file name) |
 | `photos/` | Machine/cylinder photos used for measurements |

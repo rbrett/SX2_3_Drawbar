@@ -12,6 +12,8 @@ EQ = '/tmp/claude-0/-home-claude/e34ac547-9d25-5693-9c29-89aaaa1dff19/scratchpad
 
 def load(f):
     j = json.load(open(f))
+    if isinstance(j, dict):
+        return base64.b64decode(j['data']['bytes_b64'])
     t = ''.join(x['text'] for x in j if x['type'] == 'text')
     return base64.b64decode(re.search(r'"bytes_b64":"([A-Za-z0-9+/=]+)"', t).group(1))
 

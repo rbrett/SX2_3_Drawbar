@@ -48,6 +48,10 @@ The yoke hooks under the spindle cap and pushes the drawbar down through the wed
 
 At rest the fork and the anvil both sit clear by their running gaps, so nothing touches the turning spindle. One float spring and guide pin is drawn; there is one on each side of the head.
 
+**Axonometric view (added 14 Nov 2026).** The whole assembly with the tool clamped, seen from the rear right and above, with the right side plate and right float lug transparent. It is drawn from the part drawings and the height stack-up, not from a CAD model; numbers in brackets are the build manual's item numbers.
+
+![Axonometric view of the assembled drawbar from the rear right, right side plate transparent](../drawings/axonometric/drawbar-axonometric.png)
+
 ## Force path
 
 At every phase the net axial force on the spindle is zero, so the bearings see no release load. W is the washer preload, F the actuator squeeze force (yoke pulls the cap up by F, wedge pushes the drawbar down by F), P the force to push the collet out of the taper. This is a free-body analysis of the concept, not a measured result.
@@ -449,7 +453,7 @@ The bar needs to be at least 608 long; 1000 was bought (6 Nov 2026), so about 39
 2. Wedge: hold the blank in a V-block, mill one flat, turn onto it and mill the opposite face to 24.1 (23.5 plus 0.3 per face to grind). Mill the sides to 40.6, then the ends square to 80.0.
 3. Mill the 9.5° underside, leaving 0.3 to grind: as a ramp on the CNC, or with the block on a 9.5° angle plate. The leading end comes out at about 10.7 before grinding.
 4. Trailing end: spot on the centreline 12.05 below the as-milled top (11.75 plus the 0.3 top allowance). Drill Ø12.5 to 18 deep and flat-bottom it, then tap M14 × 1.5 to 14 full thread with a bottoming tap.
-5. Anvil: square the blank to 40.6 × 23.3 × 40 the same way. Mill the 9.5° top leaving 0.3, then ream the two Ø5 H7 holes 6 deep, 20.3 from the as-milled thrust face and 8.3 above the as-milled underside.
+5. Anvil: square the blank to 40.6 × 23.3 × 40 the same way. Mill the 9.5° top leaving 0.3, then ream the two Ø5 H7 holes 6 deep, 20.0 from the thrust face (not ground; corrected 14 Nov 2026) and 8.3 above the as-milled underside.
 6. Deburr, radius any internal corners, break edges 0.3, and stamp a mark on a non-working face.
 7. Heat-treat the wedge, anvil, push pad and both thrust washers together, following the 4140 column of the heat-treat table.
 8. Grind as in steps 7–10 of the table, then check the match on the surface plate.
@@ -461,7 +465,7 @@ The bar needs to be at least 608 long; 1000 was bought (6 Nov 2026), so about 39
 | --- | --- | --- | --- |
 | Thrust washers (2) | End of the Ø50 4140 bar, before sawing (14 mm of it) | Chuck the bar; face; turn the OD to 32 for 14 mm; drill and bore 11.30 +0.05/0; part off at 4.3, face, part off at 3.3; face the parted sides; harden with the wedge batch; lap to 4.0 and 3.0 | Faces flat and parallel within 0.01; lap on a plate with figure-of-eight strokes |
 | Push pad | Ø16 4140 offcut | Face to 8.0; drill 9.9 (25/64″) to 6.0 and flat-bottom with an end mill; bottoming tap 7/16-20; check on the drawbar; harden | Top face square to the thread within 0.02. Six mm of thread carries the 16.8 kN worst case at about 160 MPa thread shear (my calculation), so the drawbar end touching the floor is not essential |
-| Side plates (2) | 12 mm 6060 (12 × 160 bar) | Screw the two blanks back to back; machine the outline, window, notch and all through-holes as a pair; separate; mill the lift and spring pockets on each inner face as mirror images; drill the front-edge M6 and the feet Ø6.6 with each plate on edge in the vice | Window 16.2 +0.1/0 high so the fork slides; inside corners R2; drill the dowel holes Ø5.8 for now and ream them with the roof block in place |
+| Side plates (2) | 12 mm 6060 (12 × 160 bar) | Screw the two blanks back to back; machine the outline, window, notch and all through-holes as a pair; separate; mill the lift and spring pockets on each inner face as mirror images; drill the front-edge M6 and the feet Ø6.6 with each plate on edge in the vice | Window 16.2 +0.1/0 high so the fork slides; inside corners R3 from the 6 mm cutter, so chamfer the fork plate's four end edges 2 × 45° (changed 14 Nov 2026); drill the dowel holes Ø5.8 for now and ream them with the roof block in place |
 | Roof block | 20 mm 6061-T6 plate | Mill to 19 × 60 × 42 −0/−0.05; tap 4 × M8 14 deep in the ends; Ø3.4 holes counterbored Ø6.5 for the wear plate | The 42 sets the plate spacing and its ends set the plates parallel: ends square to the base within 0.02 |
 | Fork plate | 16 mm mild steel | Mill to 92 × 66 × 16.0 −0/−0.1; cut the 54 +0.2/0 slot with its R27 end on the CNC; tap 4 × M6 12 deep from below; break the slot edges 0.5 | Top face flat (fly-cut): it bears on the collar flange |
 | Base plate | 12 mm 6060 (12 × 160 bar) | Profile, R47 and slot on the CNC; drill A and B Ø6.6; drill and tap C M8 with the plate flat on the table; drill D Ø5.8 for now | C square to the face within 0.05: it sets the guide pins vertical |
@@ -500,7 +504,7 @@ Every plate part is drawn on its own below, with each hole's centre as x, y in m
 | J1 | Bottom edge | 29 | 6 | Ø6.6 | thru the 20 foot |
 | J2 | Bottom edge | 101 | 6 | Ø6.6 | thru the 20 foot |
 
-Window 92 × 16.2 (x 19–111, y 20–36.2) takes the fork; slot 52 wide (x 39–91) open to y 45. Inside corners R2. G1: anvil lift pocket 7 × 9 × 3.5 deep, inner face only. G2: Ø6 × 10 spring pocket below it, on the pocket centre line. Machine both plates stacked; coordinates are the same for both in this view. Pockets go on the two inner faces. Edge views: x across the 12 thickness (H, J at mid-thickness 6). H in the front edge (x 130 on the face view), J up through each foot.
+Window 92 × 16.2 (x 19–111, y 20–36.2) takes the fork; slot 52 wide (x 39–91) open to y 45. Inside corners R3 (6 mm cutter); fork end edges chamfered 2 × 45° to clear them. G1: anvil lift pocket 7 × 9 × 3.5 deep, inner face only. G2: Ø6 × 10 spring pocket below it, on the pocket centre line. Machine both plates stacked; coordinates are the same for both in this view. Pockets go on the two inner faces. Edge views: x across the 12 thickness (H, J at mid-thickness 6). H in the front edge (x 130 on the face view), J up through each foot.
 
 **Fork plate (1 off).** 16 mm mild steel. Plan from above, open end of the slot at the bottom; 0,0 = lower-left corner.
 
@@ -750,7 +754,7 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 | --- | --- | --- | --- | --- | --- | --- |
 | 1 | Air cylinder | 1 | SDA 80 × 25 compact, double-acting (owned) | Owned | — | Purchased |
 | 2 | R8 collet, 3/4" | as ordered | Flat-nose 3/4" TTS R8, M12 × 1.75 (received 7 Nov 2026); check clamped stick-out is ≤1.5 mm | Ordered | Arrival | Purchased |
-| 3 | Belleville washers | 2 sets (16) | Genuine Tormach 31319 (30.2 × 11.4 × 2.3 mm), sets of 8: one for the stack, one spare | Tormach | Quote from AU Tormach distributor | Committed |
+| 3 | Belleville washers | 2 sets (16) | Genuine Tormach 31319 (30.2 × 11.4 × 2.3 mm), sets of 8: one for the stack, one spare | Tormach | Ordered 14 Nov 2026 from the AU Tormach distributor; awaiting delivery | Purchased |
 | 4 | Drawbar bar | 1 m | 4140/709M, 16 mm peeled round × 1 m (Edcon 4140RND.16, ordered 29 Oct 2026) | Edcon Steel | — | Purchased |
 | 5 | Collar blank | 1 | 4140/709M, 65 mm peeled round (Edcon 4140RND.65, ordered 29 Oct 2026) for the 52 OD, Ø64 flange, 64 high collar (needs at least 70 of bar); only 0.5 mm per side to clean up the flange | Edcon Steel | — | Purchased |
 | 6 | Push pad and thrust washers | 1 bar | 4140 from bars already ordered: push pad Ø16 × 8 from the Ø16 drawbar offcut; two thrust washers 32 OD × 11.3 bore, 3 and 4 mm, from the Ø50 bar (or the Ø65 collar offcut); all hardened and tempered with the wedge and anvil | Edcon Steel (ordered bars) | — | Purchased |
@@ -785,7 +789,7 @@ Rows 1–8 and 20–29 are common to List A (lever design, Appendix B).
 
 | Supplier | Rows | Order |
 | --- | --- | --- |
-| Tormach AU distributor | 3 | 2 sets of 31319 washers (16), quote pending |
+| Tormach AU distributor | 3 | 2 sets of 31319 washers (16): ordered 14 Nov 2026, awaiting delivery |
 | Edcon Steel (ordered 29 Oct 2026) | 4, 5, 6, 9, 10, 12 | 4140/709M peeled round: Ø16 × 1 m, Ø50 × 150, Ø65 for the collar; O1 ground flat stock 40 × 5 × 500; Ø5 W1 silver steel 2 × 1 m |
 | Aluminium supplier | 14, 15, 16, 18, 19, 20, 21 | 6061-T6, except the 12 × 160 flat bar, which is 6060 (temper to confirm). Flat bar 12 × 160, at least 608 long (650 recommended): side plates 2 × 130 × 189, base plate (115 × 107) and mount plate (100 × 100) cut one after another along the bar. Plate or bar 20 × 65 × 50: roof block (19 × 60 × 42 finished). Flat 10 × 30 × 100: thrust bar and stop block (42 each). Flat 25 × 20 × 100: two lugs (40 × 24 × 20 finished). Ordered and received 6 Nov 2026: the 20 × 65 × 50 roof block stock and both flats. 12 × 160 flat bar, 1000 long, purchased 6 Nov 2026 (the 400 × 250 plate couldn't be sourced). |
 | Engineering supplier | 12, 17, 18, 20 | Mild steel 16 × 100 × 70 (fork plate, purchased 6 Nov 2026); 2 mm brass sheet about 100 × 50 (cages); bronze strip 3 × 25 × 40; Ø12 h6 ground rod, one length at least 300 for 2 × 140 (unhardened ground bar is easier to turn the M8 spigot on than induction-hardened linear shaft); 2 bronze bushes Ø12/Ø16 × 20; 4 × Ø12 shaft collars |
@@ -846,7 +850,7 @@ The release stroke is the critical input; most other dimensions follow from it.
 - [ ] Air supply: 90 psi at 9 CFM confirmed; still need compressor cut-in pressure and fittings at the mill
 - [ ] Controller: 24 VDC for the valve is available from the spare supply outputs; still need the spindle-on signal source and spare Acorn I/O (sheet 9.13)
 - [ ] Washers fixed at 8 × Tormach 31319: check the release stroke is within about 1.2 mm (1.6 mm at 5.5 bar); if not, fit a genuine Tormach collet. Measure the washers' free height before setting preload
-- [ ] Order 2 sets of genuine Tormach 31319 (16 washers)
+- [x] Order 2 sets of genuine Tormach 31319 (16 washers)
 - [ ] File-test the spline: if it is soft, the grooved, positive-hold collar is available as a fallback
 - [ ] Pilot-drill, or look under the head top, at the four new M6 base-plate positions to make sure they miss any ribs
 - [ ] Spindle coast-down time (sheet 9.12) to set the K2T off-delay

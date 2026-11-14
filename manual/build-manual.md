@@ -33,6 +33,10 @@ This manual takes the power drawbar from bar stock to a commissioned machine. It
 
 A Belleville stack on the drawbar clamps the TTS holder. To release, the cylinder pushes a 9.5° wedge rearward between two pairs of rollers; the anvil underneath pushes the drawbar down. The housing floats on two guide pins, and its fork hooks under a collar clamped to the spindle, so the release force closes through the spindle, collet and drawbar, not the bearings.
 
+![Axonometric view of the assembled drawbar from the rear right, right side plate transparent; numbers in brackets are the item numbers below](../drawings/axonometric/drawbar-axonometric.png)
+
+The axonometric view above shows the finished assembly with the tool clamped, seen from the rear right and above, with the right side plate and right float lug transparent. It is drawn from the part drawings and the height stack-up, not from a CAD model. The side view and exploded view below are the original concept drawings.
+
 ![Side view of the assembled drawbar, seen from the machine's left (concept drawing; the side plates are now 6060 and the collar and fork are as in sections 6 and 8)](img/asm-side-view.png)
 
 ![Exploded view of the wedge actuator; balloon numbers match the item numbers below](img/asm-exploded.png)
@@ -43,7 +47,7 @@ A Belleville stack on the drawbar clamps the TTS holder. To release, the cylinde
 | --- | --- | --- | --- | --- |
 | 1 | SDA 80 × 25 cylinder | 1 | Bought (owned) | 10 |
 | 2 | Flat-nose 3/4" TTS R8 collet, M12 × 1.75 | 1 | Bought (received) | 4, 11 |
-| 3 | Belleville washers, Tormach 31319 | 8 (+8 spare) | Bought (to order) | 9 |
+| 3 | Belleville washers, Tormach 31319 | 8 (+8 spare) | Bought (ordered 14 Nov 2026, awaiting delivery) | 9 |
 | 4 | Drawbar | 1 | 4140 Ø16 | 6.1 |
 | 5 | Spindle collar, two-piece | 1 | 4140 Ø65 | 6.4 |
 | 6 | Push pad; thrust washers (3 and 4 thick) | 1; 2 | 4140 Ø16 offcut; 4140 Ø50 | 6.2, 6.3 |
@@ -902,7 +906,7 @@ Only the collar torque is a design value. The rest are my judgement: they are ab
 
 ### 12.3 Bought hardware
 
-The full list, with order status, is in the design doc's hardware list (all ordered 6 Nov 2026 except the spacer tubes and the Tormach 31319 washers). The parts this manual fits are: M8 × 25 12.9 (6 + 2), 7/16-20 nut and jam nut, M14 × 1.5 × 40 stud and thin nut, M12 cylinder screws (4), M6 × 25 (4), M8 × 25 (4), Ø6 m6 × 20 dowels (2), M3 × 18 (4), M5 × 20 (8), M3 × 8 csk (2), M8 × 30 set screw and nut, M6 × 30 (4), M6 × 35 (4), M6 × 20 (4), Ø6 m6 × 16 dowels (2), Ø5 m6 × 10 dowels (2), Ø12 shaft collars (4), Ø12 × Ø16 × 20 bronze bushes (2), hold-down springs (2), cage springs (4), anvil lift springs (2), DIN 6799 e-clips for Ø5 (8), M6 Helicoil inserts (4), and optionally M8 Helicoil inserts (4).
+The full list, with order status, is in the design doc's hardware list (all ordered 6 Nov 2026 except the spacer tubes; the Tormach 31319 washers were ordered 14 Nov 2026 and are awaiting delivery). The parts this manual fits are: M8 × 25 12.9 (6 + 2), 7/16-20 nut and jam nut, M14 × 1.5 × 40 stud and thin nut, M12 cylinder screws (4), M6 × 25 (4), M8 × 25 (4), Ø6 m6 × 20 dowels (2), M3 × 18 (4), M5 × 20 (8), M3 × 8 csk (2), M8 × 30 set screw and nut, M6 × 30 (4), M6 × 35 (4), M6 × 20 (4), Ø6 m6 × 16 dowels (2), Ø5 m6 × 10 dowels (2), Ø12 shaft collars (4), Ø12 × Ø16 × 20 bronze bushes (2), hold-down springs (2), cage springs (4), anvil lift springs (2), DIN 6799 e-clips for Ø5 (8), M6 Helicoil inserts (4), and optionally M8 Helicoil inserts (4).
 
 ### 12.4 References
 
